@@ -24,25 +24,12 @@ python3 -m http.server 8000
 # abra http://localhost:8000
 ```
 
-## Ativar o login com Google (≈15 minutos, gratuito)
+## Publicação e login
 
-1. Acesse https://console.firebase.google.com e clique em **Adicionar projeto** (pode desativar o Google Analytics).
-2. **Authentication > Começar > Método de login > Google > Ativar**. Escolha o e-mail de suporte e salve.
-3. **Firestore Database > Criar banco de dados**. Escolha a região `southamerica-east1` (São Paulo) e o modo de produção.
-4. **Configurações do projeto (engrenagem) > Seus apps > ícone `</>` (Web)**. Registre o app e copie o objeto `firebaseConfig`.
-5. Cole os valores em `public/firebase-config.js`.
-6. Publique as regras e o site com a Firebase CLI (precisa do Node.js):
-
-   ```bash
-   npm install -g firebase-tools
-   firebase login
-   firebase use --add          # escolha o projeto criado
-   firebase deploy             # publica o site (Hosting) e as regras do Firestore
-   ```
-
-   O endereço final aparece no terminal, algo como `https://seu-projeto.web.app`.
-
-7. Se for hospedar em outro domínio (ex.: Vercel, Netlify ou domínio próprio), adicione-o em **Authentication > Configurações > Domínios autorizados**. `localhost` já vem autorizado para testes.
+- **Site:** https://opedrosobrinhos.github.io/teo-study/ — publicado pelo GitHub Pages a cada push na `main` (`.github/workflows/pages.yml` envia a pasta `public/`).
+- **Firebase:** projeto `estudos-de-teologia` (plano gratuito). Login com Google ativado, Firestore em `southamerica-east1` (São Paulo), regras de `firestore.rules` publicadas pelo console.
+- **Domínios autorizados** (Authentication > Configurações): `localhost`, `opedrosobrinhos.github.io` e os domínios padrão do Firebase. Se o site for para outro domínio, adicione-o lá.
+- Se mudar `firestore.rules`, cole o conteúdo em **Firestore > Regras** e publique (ou use `firebase deploy --only firestore:rules`).
 
 ## Estrutura
 
