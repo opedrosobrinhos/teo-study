@@ -74,57 +74,172 @@ function renderSignIn() {
   };
 }
 
+/* ---------- Números do estudo ---------- */
+const DAY = 86400000;
+const dayKey = (t) => Math.floor((t - new Date(t).getTimezoneOffset() * 60000) / DAY);
+function overall() {
+  const st = store.state;
+  const lessons = Object.values(LESSON);
+  const done = lessons.filter((l) => watched(l.id)).length;
+  const secs = Object.values(st.sec).reduce((a, n) => a + (Number(n) || 0), 0);
+  const qz = Object.values(st.quiz).reduce((a, q) => { a.c += q.c; a.n += q.n; return a; }, { c: 0, n: 0 });
+  // Dias seguidos: conta dias com alguma atividade (aula assistida, perguntas ou última aula aberta).
+  const days = new Set([...Object.values(st.watched), ...Object.values(st.quiz).map((q) => q.at), st.last?.at].filter(Boolean).map(dayKey));
+  let streak = 0, d = dayKey(Date.now());
+  if (!days.has(d)) d--;
+  while (days.has(d)) { streak++; d--; }
+  return { done, total: lessons.length, secs, qz, streak };
+}
+
+function continueLesson() {
+  const last = store.state.last && LESSON[store.state.last.vid];
+  if (last) return watched(last.id) ? (last.subject.lessons[last.n] || nextLesson(last.subject)) : last;
+  return COURSES[0].subjects[0].lessons[0];
+}
+
+const fmtClock = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+const norm = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+
 /* ---------- Início ---------- */
 function renderHome() {
-  const all = COURSES.reduce((a, c) => { const x = courseStats(c); a.done += x.done; a.total += x.total; return a; }, { done: 0, total: 0 });
+  const o = overall();
   const first = (store.user?.name || "").split(" ")[0];
-  const last = store.state.last && LESSON[store.state.last.vid];
-  const cont = last ? (watched(last.id) ? (last.subject.lessons[last.n] || nextLesson(last.subject)) : last) : null;
-  const resumeAt = cont && store.state.pos[cont.id] > 10 ? ` a partir de ${Math.floor(store.state.pos[cont.id] / 60)}:${String(Math.floor(store.state.pos[cont.id] % 60)).padStart(2, "0")}` : "";
+  const started = Boolean(store.state.last);
+  const cont = continueLesson();
+  const pos = store.state.pos[cont.id] || 0;
+  const posPct = Math.min(100, Math.round((pos / (cont.secs || 1)) * 100));
+  const pctAll = Math.round((o.done / o.total) * 100);
 
   $main.innerHTML = `
-    <section class="hello">
-      <h1>${first && !store.user?.demo ? `Olá, ${esc(first)}` : "Seus estudos"}</h1>
-      <p class="lead">${all.done ? `Você já assistiu <strong>${all.done}</strong> de ${all.total} aulas.` : `São ${all.total} aulas em ${Object.keys(SUBJECT).length} matérias. Escolha uma para começar.`}</p>
-      ${cont ? `
-      <a class="continue" href="#/a/${cont.id}">
-        <img src="${thumb(cont.id)}" alt="" loading="lazy">
-        <span class="continue-body">
-          <span class="continue-kicker">Continuar${resumeAt}</span>
-          <span class="continue-title">${esc(cont.title)}</span>
-          <span class="continue-meta">${esc(cont.subject.title)}, aula ${cont.n} de ${cont.subject.lessons.length}</span>
+    <section class="dash">
+      <div class="dash-hello">
+        <p class="eyebrow">${started ? "Bom te ver de novo" : "Bem-vindo"}</p>
+        <h1>${first && !store.user?.demo ? `Olá, ${esc(first)}` : "Seus estudos"}</h1>
+        <p class="lead">${o.done ? `Você já assistiu <strong>${o.done}</strong> de ${o.total} aulas (${pctAll}%).` : `São ${o.total} aulas em ${Object.keys(SUBJECT).length} matérias. Comece pela primeira ou escolha uma matéria abaixo.`}</p>
+      </div>
+      <a class="resume" href="#/a/${cont.id}">
+        <span class="resume-media">
+          <img src="${thumb(cont.id)}" alt="" loading="lazy">
+          <span class="play" aria-hidden="true"></span>
+          ${pos > 10 ? `<span class="resume-bar"><span style="width:${posPct}%"></span></span>` : ""}
         </span>
-      </a>` : ""}
+        <span class="resume-body">
+          <span class="resume-kicker">${started ? `Continuar${pos > 10 ? ` de ${fmtClock(pos)}` : ""}` : "Comece por aqui"}</span>
+          <span class="resume-title">${esc(cont.title)}</span>
+          <span class="resume-meta">${esc(cont.subject.title)} · aula ${cont.n} de ${cont.subject.lessons.length} · ${cont.dur}</span>
+        </span>
+      </a>
+      <dl class="stats">
+        <div class="stat"><dt>Aulas assistidas</dt><dd>${o.done}<small>/${o.total}</small></dd><span class="meter"><span style="width:${pctAll}%"></span></span></div>
+        <div class="stat"><dt>Tempo de estudo</dt><dd>${o.secs >= 60 ? fmtHours(o.secs) : "0 min"}</dd><span class="stat-note">assistido aqui</span></div>
+        <div class="stat"><dt>Acertos nas perguntas</dt><dd>${o.qz.n ? `${Math.round((o.qz.c / o.qz.n) * 100)}%` : "–"}</dd><span class="stat-note">${o.qz.n ? `${o.qz.c} de ${o.qz.n}` : "nenhuma respondida ainda"}</span></div>
+        <div class="stat"><dt>Dias seguidos</dt><dd>${o.streak}</dd><span class="stat-note">${o.streak ? "continue amanhã" : "estude hoje para começar"}</span></div>
+      </dl>
     </section>
+
+    <div class="search">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="search" id="q" placeholder="Buscar aula ou matéria (ex.: Calvino, parábolas, Gênesis)" aria-label="Buscar aula ou matéria" autocomplete="off">
+    </div>
+    <div id="results" aria-live="polite"></div>
+
+    <div id="catalog">
     ${COURSES.map((c) => {
       const cs = courseStats(c);
       return `
       <section class="course">
         <header class="course-head">
           <h2>${esc(c.title)}</h2>
-          <p>${cs.done}/${cs.total} aulas</p>
+          <p>${cs.done}/${cs.total} aulas · ${fmtHours(c.subjects.reduce((a, s) => a + s.lessons.reduce((b, l) => b + l.secs, 0), 0))}</p>
         </header>
-        <ul class="subjects">
+        <ul class="cards">
           ${c.subjects.map((s) => {
             const st = subjectStats(s); const hrs = fmtHours(s.lessons.reduce((a, l) => a + l.secs, 0));
             return `
             <li>
-              <a class="subject" href="#/m/${s.id}">
-                <span class="subject-text">
-                  <span class="subject-title">${esc(s.title)}</span>
-                  <span class="subject-desc">${esc(s.desc)}</span>
-                  <span class="subject-meta">${st.total} aulas, ${hrs}</span>
-                </span>
-                <span class="subject-progress">
+              <a class="card${st.pct === 100 ? " complete" : ""}" href="#/m/${s.id}">
+                <span class="card-cover"><img src="${thumb(s.lessons[0].id)}" alt="" loading="lazy"><span class="card-badge">${st.pct === 100 ? "Concluída" : st.done ? `${st.pct}%` : `${st.total} aulas`}</span></span>
+                <span class="card-body">
+                  <span class="card-title">${esc(s.title)}</span>
+                  <span class="card-desc">${esc(s.desc)}</span>
                   ${edge(s)}
-                  <span class="pct">${st.pct === 100 ? "Concluída" : `${st.pct}%`}</span>
+                  <span class="card-meta"><span>${st.done}/${st.total} assistidas</span><span>${hrs}</span></span>
                 </span>
               </a>
             </li>`;
           }).join("")}
         </ul>
       </section>`;
-    }).join("")}`;
+    }).join("")}
+    </div>`;
+
+  const q = document.getElementById("q");
+  q.oninput = () => renderSearch(q.value);
+  if (renderHome.lastQuery) { q.value = renderHome.lastQuery; renderSearch(q.value); }
+}
+
+function renderSearch(text) {
+  renderHome.lastQuery = text;
+  const box = document.getElementById("results"), cat = document.getElementById("catalog");
+  const terms = norm(text.trim()).split(/\s+/).filter(Boolean);
+  if (!terms.length) { box.innerHTML = ""; cat.hidden = false; return; }
+  const hits = Object.values(LESSON).filter((l) => { const h = norm(`${l.title} ${l.subject.title}`); return terms.every((t) => h.includes(t)); });
+  cat.hidden = true;
+  box.innerHTML = hits.length ? `
+    <p class="results-count">${hits.length} ${hits.length === 1 ? "aula encontrada" : "aulas encontradas"}</p>
+    <ol class="lessons results">${hits.slice(0, 60).map((l) => `
+      <li class="lesson${watched(l.id) ? " done" : ""}">
+        <a href="#/a/${l.id}">
+          <span class="num">${l.n}</span>
+          <span class="lesson-text"><span class="lesson-title">${esc(l.title)}</span><span class="lesson-meta">${esc(l.subject.title)} · ${l.dur}</span></span>
+          <span class="check" aria-label="${watched(l.id) ? "Assistida" : "Não assistida"}"></span>
+        </a>
+      </li>`).join("")}</ol>` : `<p class="results-count">Nenhuma aula encontrada para “${esc(text.trim())}”.</p>`;
+}
+
+/* ---------- Desempenho ---------- */
+function renderPerf() {
+  const o = overall();
+  const subjects = COURSES.flatMap((c) => c.subjects);
+  const rows = subjects.map((s) => {
+    const st = subjectStats(s);
+    const qs = s.lessons.map((l) => store.state.quiz[l.id]).filter(Boolean);
+    const c = qs.reduce((a, q) => a + q.c, 0), n = qs.reduce((a, q) => a + q.n, 0);
+    return { s, st, answered: qs.length, acc: n ? Math.round((c / n) * 100) : null };
+  });
+  const review = Object.entries(store.state.quiz).filter(([id, q]) => LESSON[id] && q.c < q.n).sort((a, b) => a[1].c / a[1].n - b[1].c / b[1].n).slice(0, 12);
+
+  $main.innerHTML = `
+    <section class="dash-hello perf-head">
+      <p class="eyebrow">Desempenho</p>
+      <h1>Como vão seus estudos</h1>
+      <p class="lead">${o.done} de ${o.total} aulas assistidas${o.qz.n ? `, ${Math.round((o.qz.c / o.qz.n) * 100)}% de acertos em ${o.qz.n} perguntas` : ""}.</p>
+    </section>
+    <div class="table-wrap">
+      <table class="perf">
+        <thead><tr><th scope="col">Matéria</th><th scope="col">Aulas</th><th scope="col">Perguntas feitas</th><th scope="col">Acertos</th></tr></thead>
+        <tbody>${rows.map((r) => `
+          <tr>
+            <th scope="row"><a href="#/m/${r.s.id}">${esc(r.s.title)}</a><small>${esc(r.s.course.title)}</small></th>
+            <td><span class="cell-meter"><span class="meter"><span style="width:${r.st.pct}%"></span></span>${r.st.done}/${r.st.total}</span></td>
+            <td>${r.answered}/${r.st.total}</td>
+            <td class="${r.acc == null ? "muted" : r.acc >= 70 ? "good" : r.acc >= 50 ? "" : "bad"}">${r.acc == null ? "–" : `${r.acc}%`}</td>
+          </tr>`).join("")}
+        </tbody>
+      </table>
+    </div>
+    <section class="review">
+      <h2>Para revisar</h2>
+      ${review.length ? `<p class="lead">Aulas em que você errou alguma pergunta. Reveja o trecho e responda de novo.</p>
+      <ol class="lessons">${review.map(([id, q]) => { const l = LESSON[id]; return `
+        <li class="lesson">
+          <a href="#/a/${l.id}#quiz">
+            <span class="num">${l.n}</span>
+            <span class="lesson-text"><span class="lesson-title">${esc(l.title)}</span><span class="lesson-meta">${esc(l.subject.title)} · acertou ${q.c} de ${q.n}</span></span>
+            <span class="score-pill">${q.c}/${q.n}</span>
+          </a>
+        </li>`; }).join("")}</ol>` : `<p class="lead">Nada por aqui ainda. Quando você errar alguma pergunta, a aula aparece nesta lista.</p>`}
+    </section>`;
 }
 
 /* ---------- Matéria ---------- */
@@ -207,7 +322,7 @@ function renderLesson(id) {
 async function setWatched(l, on, manual = false) {
   if (watched(l.id) === on) return;
   await store.setWatched(l.id, on);
-  if (location.hash !== `#/a/${l.id}`) return;
+  if (!location.hash.startsWith(`#/a/${l.id}`)) return;
   const b = document.getElementById("mark");
   b.classList.toggle("on", on); b.setAttribute("aria-pressed", on);
   b.querySelector(".label").textContent = on ? "Assistida" : "Marcar como assistida";
@@ -322,16 +437,29 @@ function renderNotFound() {
 /* ---------- Rotas ---------- */
 function route() {
   if (!ready) return;
-  const [, kind, id] = location.hash.split("/");
+  const [, kind, rawId] = location.hash.split("/");
+  const [id, anchor] = (rawId || "").split("#");
   if (kind !== "a") teardownPlayer();
+  document.getElementById("topnav").hidden = !store.user;
+  document.querySelectorAll("[data-nav]").forEach((a) => a.toggleAttribute("aria-current", a.dataset.nav === (kind === "p" ? "p" : kind ? "" : "home")));
   if (!store.user) { renderSignIn(); return; }
   if (kind === "m") renderSubject(id);
   else if (kind === "a") renderLesson(id);
+  else if (kind === "p") renderPerf();
   else renderHome();
+  if (anchor) { document.getElementById(anchor)?.scrollIntoView(); return; }
   $main.focus({ preventScroll: true });
   if (kind !== "a" || !route.sameLesson) window.scrollTo(0, 0);
 }
 window.addEventListener("hashchange", route);
+
+// Tema: segue o sistema até a pessoa escolher; a escolha fica salva neste navegador.
+document.getElementById("theme").onclick = () => {
+  const root = document.documentElement;
+  const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  root.dataset.theme = dark ? "light" : "dark";
+  try { localStorage.setItem("estudos:theme", root.dataset.theme); } catch { /* ignora */ }
+};
 
 (async function boot() {
   $main.innerHTML = `<p class="loading">Carregando aulas…</p>`;
