@@ -1,4 +1,5 @@
 import { store, isConfigured } from "./store.js";
+import { openReader, closeReader, loadText, importPdf, removeText } from "./reader.js";
 
 const $main = document.getElementById("main");
 const $account = document.getElementById("account");
@@ -11,7 +12,7 @@ const fmtHours = (s) => { const h = Math.floor(s / 3600), m = Math.round((s % 36
 const thumb = (id) => `https://i.ytimg.com/vi/${id}/mqdefault.jpg`;
 const WATCH_RATIO = 0.85;
 
-let COURSES = [], QUIZ = {}, LESSON = {}, SUBJECT = {}, ready = false;
+let COURSES = [], QUIZ = {}, LESSON = {}, SUBJECT = {}, SERMONS = [], BOOKS = [], ready = false;
 
 function toast(msg) {
   $toast.textContent = msg; $toast.classList.add("show");
@@ -19,8 +20,13 @@ function toast(msg) {
 }
 
 async function loadData() {
-  const [c, q] = await Promise.all([fetch("data/courses.json").then((r) => r.json()), fetch("data/quiz.json").then((r) => r.json()).catch(() => ({}))]);
-  COURSES = c; QUIZ = q;
+  const [c, q, s, b] = await Promise.all([
+    fetch("data/courses.json").then((r) => r.json()),
+    fetch("data/quiz.json").then((r) => r.json()).catch(() => ({})),
+    fetch("data/sermons.json").then((r) => r.json()).catch(() => []),
+    fetch("data/books.json").then((r) => r.json()).catch(() => []),
+  ]);
+  COURSES = c; QUIZ = q; SERMONS = s; BOOKS = b;
   for (const course of COURSES) for (const s of course.subjects) {
     s.course = course; SUBJECT[s.id] = s;
     s.lessons.forEach((l, i) => { l.n = i + 1; l.subject = s; l.secs = toSec(l.dur); LESSON[l.id] = l; });
@@ -426,6 +432,206 @@ function renderQuiz(l) {
   };
 }
 
+/* ---------- Pregações ---------- */
+function renderSermons() {
+  $main.innerHTML = `
+    <section class="dash-hello perf-head">
+      <p class="eyebrow">Pregações</p>
+      <h1>Pregações para ouvir e ler</h1>
+      <p class="lead">Cada pregação tem o vídeo e um resumo para leitura, com os pontos principais da mensagem.</p>
+    </section>
+    <ul class="cards sermons">
+      ${SERMONS.map((s) => `
+      <li>
+        <a class="card" href="#/s/${s.id}">
+          <span class="card-cover"><img src="${thumb(s.id)}" alt="" loading="lazy"><span class="card-badge">${s.dur}</span></span>
+          <span class="card-body">
+            <span class="card-kicker">${esc(s.text)}</span>
+            <span class="card-title">${esc(s.title)}</span>
+            <span class="card-desc">${esc(s.lead)}</span>
+            <span class="card-meta"><span>${esc(s.preacher)}</span><span>Ler resumo</span></span>
+          </span>
+        </a>
+      </li>`).join("")}
+    </ul>`;
+}
+
+function renderSermon(id) {
+  const s = SERMONS.find((x) => x.id === id); if (!s) return renderNotFound();
+  $main.innerHTML = `
+    <nav class="crumbs"><a href="#/">Início</a><span aria-hidden="true">/</span><a href="#/s">Pregações</a></nav>
+    <article class="sermon">
+      <div class="player-wrap"><iframe src="https://www.youtube-nocookie.com/embed/${s.id}?rel=0&modestbranding=1&playsinline=1&hl=pt" title="${esc(s.title)}" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+      <header class="lesson-head">
+        <p class="lesson-kicker">${esc(s.text)}</p>
+        <h1>${esc(s.title)}</h1>
+        <p class="lesson-sub">${esc(s.preacher)} · ${esc(s.source)} · ${s.dur}</p>
+      </header>
+      <div class="sermon-body">
+        <h2>Resumo</h2>
+        <p class="sermon-lead">${esc(s.lead)}</p>
+        ${s.sections.map((sec) => `
+          <section>
+            <h3>${esc(sec.h)}</h3>
+            ${sec.p.map((p) => `<p>${esc(p)}</p>`).join("")}
+          </section>`).join("")}
+        ${s.takeaway ? `<aside class="takeaway"><strong>Para guardar</strong><p>${esc(s.takeaway)}</p></aside>` : ""}
+      </div>
+    </article>`;
+}
+
+/* ---------- Livros ---------- */
+const bookById = (id) => BOOKS.find((b) => b.id === id);
+const cover = (b) => `
+  <span class="cover" aria-hidden="true">
+    <span class="cover-author">${esc(b.author)}</span>
+    <span class="cover-title">${esc(b.title)}</span>
+    <span class="cover-sub">${esc(b.subtitle || "")}</span>
+  </span>`;
+
+function renderBooks() {
+  $main.innerHTML = `
+    <section class="dash-hello perf-head">
+      <p class="eyebrow">Livros</p>
+      <h1>Livros para estudar</h1>
+      <p class="lead">Cada livro tem um resumo de estudo por capítulo e um leitor com páginas para ler o texto completo.</p>
+    </section>
+    <ul class="shelf">
+      ${BOOKS.map((b) => {
+        const pos = store.state.books?.[b.id];
+        return `
+        <li>
+          <a class="shelf-item" href="#/l/${b.id}">
+            ${cover(b)}
+            <span class="shelf-text">
+              <span class="card-title">${esc(b.title)}</span>
+              <span class="shelf-meta">${esc(b.author)} · ${b.chapters.length} capítulos</span>
+              ${pos ? `<span class="meter"><span style="width:${Math.round(pos.pct * 100)}%"></span></span><span class="shelf-meta">${Math.round(pos.pct * 100)}% lido</span>` : ""}
+            </span>
+          </a>
+        </li>`;
+      }).join("")}
+    </ul>`;
+}
+
+async function renderBook(id) {
+  const b = bookById(id); if (!b) return renderNotFound();
+  const pos = store.state.books?.[id];
+  const posCh = pos && b.chapters.find((c) => c.n === pos.ch);
+  $main.innerHTML = `
+    <nav class="crumbs"><a href="#/">Início</a><span aria-hidden="true">/</span><a href="#/l">Livros</a></nav>
+    <section class="book-hero">
+      ${cover(b)}
+      <div class="book-info">
+        <p class="eyebrow">${esc(b.author)}</p>
+        <h1>${esc(b.title)}</h1>
+        <p class="book-sub">${esc(b.subtitle || "")}</p>
+        <p class="lead">${esc(b.desc)}</p>
+        <div class="book-actions" id="book-actions"><span class="muted">Verificando o livro neste aparelho…</span></div>
+        ${pos ? `<p class="book-pos"><span class="meter"><span style="width:${Math.round(pos.pct * 100)}%"></span></span>${Math.round(pos.pct * 100)}% lido${posCh ? `, parou em ${esc(posCh.title)}` : ""}</p>` : ""}
+      </div>
+    </section>
+    <section class="study">
+      <header class="course-head"><h2>Resumo de estudo</h2><p>${b.chapters.length} capítulos em ${b.parts.length} partes</p></header>
+      ${b.parts.map((p) => `
+        <div class="study-part">
+          <h3><span>Parte ${p.n}</span>${esc(p.title)}</h3>
+          <ol class="study-list">
+            ${b.chapters.filter((c) => c.part === p.n).map((c) => `
+              <li><a href="#/l/${b.id}/${c.n}">
+                <span class="num">${c.n}</span>
+                <span class="lesson-text"><span class="lesson-title">${esc(c.title)}</span><span class="study-idea">${esc(c.idea)}</span></span>
+              </a></li>`).join("")}
+          </ol>
+        </div>`).join("")}
+    </section>`;
+  bookActions(b);
+}
+
+// Botões de leitura: dependem de o PDF já ter sido aberto neste aparelho.
+async function bookActions(b) {
+  const box = document.getElementById("book-actions"); if (!box) return;
+  const text = await loadText(b.id);
+  if (!location.hash.startsWith(`#/l/${b.id}`)) return;
+  const pos = store.state.books?.[b.id];
+  if (text) {
+    box.innerHTML = `
+      <a class="btn" href="#/r/${b.id}">${pos ? "Continuar a leitura" : "Começar a ler"}</a>
+      <button class="btn-text" id="forget">Remover o texto deste aparelho</button>`;
+    document.getElementById("forget").onclick = async () => { await removeText(b.id); toast("Texto removido deste aparelho"); bookActions(b); };
+    return;
+  }
+  box.innerHTML = `
+    <label class="btn file-btn">Abrir o PDF do livro<input type="file" accept="application/pdf,.pdf" id="pdf" hidden></label>
+    <p class="file-note">O livro é lido e guardado só neste aparelho. Nada do texto é enviado para o site. Faça isso uma vez em cada aparelho onde quiser ler.</p>
+    <div class="import" id="import" hidden><span class="meter"><span style="width:0%"></span></span><span class="import-label">Preparando o livro…</span></div>`;
+  document.getElementById("pdf").onchange = async (e) => {
+    const file = e.target.files[0]; if (!file) return;
+    const bar = document.getElementById("import"); bar.hidden = false;
+    box.querySelector(".file-btn").hidden = true;
+    try {
+      const book = await importPdf(b.id, file, (f) => {
+        bar.querySelector(".meter span").style.width = `${Math.round(f * 100)}%`;
+        bar.querySelector(".import-label").textContent = `Lendo as páginas… ${Math.round(f * 100)}%`;
+      });
+      const found = book.chapters.filter((c) => /^Cap/.test(c.label)).length;
+      if (found !== b.chapters.length) toast(`Atenção: encontrei ${found} capítulos, o esperado eram ${b.chapters.length}. Confira se é o PDF certo.`);
+      else toast("Livro pronto para ler neste aparelho");
+      bookActions(b);
+    } catch (err) {
+      console.error(err);
+      toast("Não consegui ler esse PDF. Tente de novo.");
+      bookActions(b);
+    }
+  };
+}
+
+function renderStudy(id, n) {
+  const b = bookById(id); if (!b) return renderNotFound();
+  const i = b.chapters.findIndex((c) => c.n === Number(n)); if (i < 0) return renderNotFound();
+  const c = b.chapters[i], prev = b.chapters[i - 1], next = b.chapters[i + 1];
+  const part = b.parts.find((p) => p.n === c.part);
+  $main.innerHTML = `
+    <nav class="crumbs"><a href="#/l">Livros</a><span aria-hidden="true">/</span><a href="#/l/${b.id}">${esc(b.title)}</a></nav>
+    <article class="sermon study-ch">
+      <header class="lesson-head">
+        <p class="lesson-kicker">${part ? `Parte ${part.n} · ${esc(part.title)} · ` : ""}Capítulo ${c.n}</p>
+        <h1>${esc(c.title)}</h1>
+        <p class="study-big-idea">${esc(c.idea)}</p>
+        <a class="btn-text read-link" href="#/r/${b.id}/${c.n}">Ler este capítulo no livro</a>
+      </header>
+      <div class="sermon-body">
+        <h2>Resumo</h2>
+        ${c.summary.map((p) => `<p>${esc(p)}</p>`).join("")}
+        <h3>Pontos para guardar</h3>
+        <ul class="study-points">${c.points.map((p) => `<li>${esc(p)}</li>`).join("")}</ul>
+        ${c.terms?.length ? `<h3>Termos</h3><dl class="study-terms">${c.terms.map((t) => `<div><dt>${esc(t.t)}</dt><dd>${esc(t.d)}</dd></div>`).join("")}</dl>` : ""}
+        ${c.verses?.length ? `<h3>Passagens</h3><p class="study-verses">${c.verses.map((v) => `<span>${esc(v)}</span>`).join("")}</p>` : ""}
+        ${c.questions?.length ? `<aside class="takeaway"><strong>Para revisar</strong><ol>${c.questions.map((q) => `<li>${esc(q)}</li>`).join("")}</ol></aside>` : ""}
+      </div>
+      <nav class="pager">
+        ${prev ? `<a href="#/l/${b.id}/${prev.n}" class="pager-prev"><small>Capítulo ${prev.n}</small>${esc(prev.title)}</a>` : "<span></span>"}
+        ${next ? `<a href="#/l/${b.id}/${next.n}" class="pager-next"><small>Capítulo ${next.n}</small>${esc(next.title)}</a>` : `<a href="#/l/${b.id}" class="pager-next"><small>Fim do resumo</small>Voltar ao livro</a>`}
+      </nav>
+    </article>`;
+}
+
+async function renderReader(id, n) {
+  const b = bookById(id); if (!b) return renderNotFound();
+  $main.innerHTML = `<p class="loading">Abrindo o livro…</p>`;
+  const text = await loadText(id);
+  if (!location.hash.startsWith(`#/r/${id}`)) return;
+  if (!text) { location.replace(`#/l/${id}`); toast("Abra o PDF do livro neste aparelho para ler."); return; }
+  const saved = store.state.books?.[id];
+  const start = n ? { ch: Number(n), b: 0 } : saved;
+  openReader({
+    root: $main, id, book: text, meta: b, start,
+    onSave: (pos) => store.saveBook(id, pos),
+    onExit: () => { location.hash = `#/l/${id}`; },
+    summaryHref: (ch) => b.chapters.some((c) => c.n === ch) ? `#/l/${id}/${ch}` : null,
+  });
+}
+
 function renderNotFound() {
   $main.innerHTML = `<section class="hello"><h1>Página não encontrada</h1><p class="lead"><a href="#/">Voltar ao início</a></p></section>`;
 }
@@ -433,13 +639,17 @@ function renderNotFound() {
 /* ---------- Rotas ---------- */
 function route() {
   if (!ready) return;
-  const [, kind, rawId] = location.hash.split("/");
+  const [, kind, rawId, sub] = location.hash.split("/");
   const [id, anchor] = (rawId || "").split("#");
   if (kind !== "a") teardownPlayer();
+  if (kind !== "r") closeReader();
   document.getElementById("topnav").hidden = !store.user;
-  document.querySelectorAll("[data-nav]").forEach((a) => a.toggleAttribute("aria-current", a.dataset.nav === (kind === "p" ? "p" : kind ? "" : "home")));
+  document.querySelectorAll("[data-nav]").forEach((a) => a.toggleAttribute("aria-current", a.dataset.nav === (["p", "s", "l"].includes(kind) ? kind : kind === "r" ? "l" : kind ? "" : "home")));
   if (!store.user) { renderSignIn(); return; }
-  if (kind === "m") renderSubject(id);
+  if (kind === "s") id ? renderSermon(id) : renderSermons();
+  else if (kind === "l") id ? (sub ? renderStudy(id, sub) : renderBook(id)) : renderBooks();
+  else if (kind === "r") renderReader(id, sub);
+  else if (kind === "m") renderSubject(id);
   else if (kind === "a") renderLesson(id);
   else if (kind === "p") renderPerf();
   else renderHome();

@@ -4,7 +4,7 @@
 import { firebaseConfig } from "./firebase-config.js";
 
 const SDK = "https://www.gstatic.com/firebasejs/10.12.2";
-const empty = () => ({ watched: {}, sec: {}, pos: {}, quiz: {}, last: null });
+const empty = () => ({ watched: {}, sec: {}, pos: {}, quiz: {}, last: null, books: {} });
 
 export const isConfigured = Boolean(firebaseConfig.apiKey && firebaseConfig.projectId);
 
@@ -21,6 +21,7 @@ class LocalStore {
   async saveProgress(vid, sec, pos) { this.state.sec[vid] = sec; this.state.pos[vid] = pos; this.state.last = { vid, at: Date.now() }; this._save(); }
   async setLast(vid) { this.state.last = { vid, at: Date.now() }; this._save(); }
   async saveQuiz(vid, c, n) { this.state.quiz[vid] = { c, n, at: Date.now() }; this._save(); }
+  async saveBook(id, pos) { this.state.books[id] = { ...pos, at: Date.now() }; this._save(); }
 }
 
 class FirebaseStore {
@@ -67,6 +68,8 @@ class FirebaseStore {
   }
   async setLast(vid) { this.state.last = { vid, at: Date.now() }; return this._merge({ last: this.state.last }); }
   async saveQuiz(vid, c, n) { this.state.quiz[vid] = { c, n, at: Date.now() }; return this._merge({ quiz: { [vid]: this.state.quiz[vid] } }); }
+  // Só a posição de leitura vai para a conta; o texto do livro fica no aparelho.
+  async saveBook(id, pos) { this.state.books[id] = { ...pos, at: Date.now() }; return this._merge({ books: { [id]: this.state.books[id] } }); }
 }
 
 export const store = isConfigured ? new FirebaseStore() : new LocalStore();
