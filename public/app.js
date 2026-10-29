@@ -1,4 +1,4 @@
-import { store, isConfigured } from "./store.js?v=3";
+import { store, isConfigured } from "./store.js?v=4";
 
 const $main = document.getElementById("main");
 const $account = document.getElementById("account");
@@ -480,7 +480,7 @@ function renderSermon(id) {
 }
 
 /* ---------- Resumos de livros ---------- */
-// Cada livro vira uma sequência de aulas curtas, uma por capítulo.
+// Cada livro é resumido em sequência, capítulo por capítulo.
 const bookById = (id) => BOOKS.find((b) => b.id === id);
 const bookDone = (b, n) => Boolean(store.state.books?.[b.id]?.done?.[n]);
 const bookStats = (b) => { const done = b.chapters.filter((c) => bookDone(b, c.n)).length; return { done, total: b.chapters.length, pct: Math.round((done / b.chapters.length) * 100) }; };
@@ -496,14 +496,14 @@ const cover = (b) => `
     <span class="cover-title${Math.max(...b.title.split(" ").map((w) => w.length)) > 11 ? " long" : ""}">${esc(b.title)}</span>
     <span class="cover-sub">${esc(b.subtitle || "")}</span>
   </span>`;
-const bookEdge = (b) => `<div class="edge" role="img" aria-label="${bookStats(b).done} de ${b.chapters.length} aulas estudadas">${b.chapters.map((c) => `<span class="${bookDone(b, c.n) ? "on" : ""}" title="${esc(`${c.n}. ${c.title}`)}"></span>`).join("")}</div>`;
+const bookEdge = (b) => `<div class="edge" role="img" aria-label="${bookStats(b).done} de ${b.chapters.length} capítulos estudados">${b.chapters.map((c) => `<span class="${bookDone(b, c.n) ? "on" : ""}" title="${esc(`${c.n}. ${c.title}`)}"></span>`).join("")}</div>`;
 
 function renderBooks() {
   $main.innerHTML = `
     <section class="dash-hello perf-head">
       <p class="eyebrow">Resumos de livros</p>
       <h1>Resumos de livros</h1>
-      <p class="lead">Cada livro foi dividido em aulas curtas, uma por capítulo, com os pontos principais, os termos e perguntas para revisar.</p>
+      <p class="lead">Cada livro foi resumido capítulo por capítulo, com os pontos principais, os termos e perguntas para revisar.</p>
     </section>
     <ul class="shelf">
       ${BOOKS.map((b) => {
@@ -514,7 +514,7 @@ function renderBooks() {
             ${cover(b)}
             <span class="shelf-text">
               <span class="card-title">${esc(b.title)}</span>
-              <span class="shelf-meta">${esc(b.author)} · ${st.total} aulas</span>
+              <span class="shelf-meta">${esc(b.author)} · ${st.total} capítulos</span>
               ${st.done ? `<span class="meter"><span style="width:${st.pct}%"></span></span><span class="shelf-meta">${st.done} de ${st.total} estudadas</span>` : ""}
             </span>
           </a>
@@ -531,14 +531,14 @@ function renderBook(id) {
     <section class="book-hero">
       ${cover(b)}
       <div class="book-info">
-        <p class="eyebrow">Resumo em aulas · ${esc(b.author)}</p>
+        <p class="eyebrow">Resumo por capítulos · ${esc(b.author)}</p>
         <h1>${esc(b.title)}</h1>
         <p class="book-sub">${esc(b.subtitle || "")}</p>
         <p class="lead">${esc(b.desc)}</p>
         ${bookEdge(b)}
         <div class="hero-row">
-          <p>${st.done} de ${st.total} aulas estudadas</p>
-          <a class="btn" href="#/l/${b.id}/${nx.n}">${st.done === 0 ? "Começar pela aula 1" : st.done === st.total ? "Rever a aula 1" : `Continuar na aula ${nx.n}`}</a>
+          <p>${st.done} de ${st.total} capítulos estudados</p>
+          <a class="btn" href="#/l/${b.id}/${nx.n}">${st.done === 0 ? "Começar pelo capítulo 1" : st.done === st.total ? "Rever o capítulo 1" : `Continuar no capítulo ${nx.n}`}</a>
         </div>
       </div>
     </section>
@@ -560,7 +560,7 @@ function renderBook(id) {
     </section>`;
 }
 
-// Agrupa as aulas em sequência: as de uma mesma parte ficam juntas; introdução e conclusão ficam soltas.
+// Agrupa os capítulos em sequência: as de uma mesma parte ficam juntas; introdução e conclusão ficam soltas.
 function bookGroups(b) {
   const groups = [];
   for (const c of b.chapters) {
@@ -581,7 +581,7 @@ function renderBookLesson(id, n) {
     <nav class="crumbs"><a href="#/l">Resumos de livros</a><span aria-hidden="true">/</span><a href="#/l/${b.id}">${esc(b.title)}</a></nav>
     <article class="sermon study-ch">
       <header class="lesson-head">
-        <p class="lesson-kicker">Aula ${c.n} de ${b.chapters.length}${part ? ` · Parte ${part.n}: ${esc(part.title)}` : ""}${c.by ? ` · ${esc(c.by)}` : ""}</p>
+        <p class="lesson-kicker">Capítulo ${c.n} de ${b.chapters.length}${part ? ` · Parte ${part.n}: ${esc(part.title)}` : ""}${c.by ? ` · ${esc(c.by)}` : ""}</p>
         <h1>${esc(c.title)}</h1>
         <p class="study-big-idea">${esc(c.idea)}</p>
       </header>
@@ -600,12 +600,12 @@ function renderBookLesson(id, n) {
       </div>
       <div class="watch-row">
         <button class="toggle${done ? " on" : ""}" id="mark" aria-pressed="${done}">
-          <span class="box" aria-hidden="true"></span><span class="label">${done ? "Aula estudada" : "Marcar como estudada"}</span>
+          <span class="box" aria-hidden="true"></span><span class="label">${done ? "Capítulo estudado" : "Marcar como estudado"}</span>
         </button>
       </div>
       <nav class="pager">
-        ${prev ? `<a href="#/l/${b.id}/${prev.n}" class="pager-prev"><small>Aula ${prev.n}</small>${esc(prev.title)}</a>` : "<span></span>"}
-        ${next ? `<a href="#/l/${b.id}/${next.n}" class="pager-next"><small>Aula ${next.n}</small>${esc(next.title)}</a>` : `<a href="#/l/${b.id}" class="pager-next"><small>Fim das aulas</small>Voltar ao livro</a>`}
+        ${prev ? `<a href="#/l/${b.id}/${prev.n}" class="pager-prev"><small>Capítulo ${prev.n}</small>${esc(prev.title)}</a>` : "<span></span>"}
+        ${next ? `<a href="#/l/${b.id}/${next.n}" class="pager-next"><small>Capítulo ${next.n}</small>${esc(next.title)}</a>` : `<a href="#/l/${b.id}" class="pager-next"><small>Fim do livro</small>Voltar ao livro</a>`}
       </nav>
     </article>`;
   store.setBookLast(b.id, c.n);
@@ -614,8 +614,8 @@ function renderBookLesson(id, n) {
     await store.setBookDone(b.id, c.n, on);
     const btn = e.currentTarget;
     btn.classList.toggle("on", on); btn.setAttribute("aria-pressed", on);
-    btn.querySelector(".label").textContent = on ? "Aula estudada" : "Marcar como estudada";
-    if (on) toast(next ? "Aula marcada. Próxima: " + next.title : "Você terminou todas as aulas deste livro");
+    btn.querySelector(".label").textContent = on ? "Capítulo estudado" : "Marcar como estudado";
+    if (on) toast(next ? "Capítulo marcado. Próximo: " + next.title : "Você terminou todos os capítulos deste livro");
   };
 }
 
