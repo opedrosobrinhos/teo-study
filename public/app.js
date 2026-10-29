@@ -1,4 +1,4 @@
-import { store, isConfigured } from "./store.js";
+import { store, isConfigured } from "./store.js?v=2";
 
 const $main = document.getElementById("main");
 const $account = document.getElementById("account");
@@ -20,10 +20,10 @@ function toast(msg) {
 
 async function loadData() {
   const [c, q, s, b] = await Promise.all([
-    fetch("data/courses.json").then((r) => r.json()),
-    fetch("data/quiz.json").then((r) => r.json()).catch(() => ({})),
-    fetch("data/sermons.json").then((r) => r.json()).catch(() => []),
-    fetch("data/books.json").then((r) => r.json()).catch(() => []),
+    fetch("data/courses.json", { cache: "no-cache" }).then((r) => r.json()),
+    fetch("data/quiz.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => ({})),
+    fetch("data/sermons.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => []),
+    fetch("data/books.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => []),
   ]);
   COURSES = c; QUIZ = q; SERMONS = s; BOOKS = b;
   for (const course of COURSES) for (const s of course.subjects) {
