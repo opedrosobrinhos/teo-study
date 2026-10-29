@@ -1,7 +1,7 @@
 // Guarda o progresso de cada pessoa.
 // Com Firebase configurado: login com Google + Firestore (users/{uid}).
 // Sem configuração: modo demonstração com localStorage.
-import { firebaseConfig } from "./firebase-config.js?v=4";
+import { firebaseConfig } from "./firebase-config.js?v=5";
 
 const SDK = "https://www.gstatic.com/firebasejs/10.12.2";
 const empty = () => ({ watched: {}, sec: {}, pos: {}, quiz: {}, last: null, books: {} });
