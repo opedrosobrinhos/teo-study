@@ -21,7 +21,11 @@ class LocalStore {
   async saveProgress(vid, sec, pos) { this.state.sec[vid] = sec; this.state.pos[vid] = pos; this.state.last = { vid, at: Date.now() }; this._save(); }
   async setLast(vid) { this.state.last = { vid, at: Date.now() }; this._save(); }
   async saveQuiz(vid, c, n) { this.state.quiz[vid] = { c, n, at: Date.now() }; this._save(); }
-  async saveBook(id, pos) { this.state.books[id] = { ...pos, at: Date.now() }; this._save(); }
+  async setBookLast(id, n) { this.state.books[id] = { ...this.state.books[id], last: n, at: Date.now() }; this._save(); }
+  async setBookDone(id, n, on) {
+    const b = (this.state.books[id] = { done: {}, ...this.state.books[id] });
+    b.done = { ...b.done }; on ? (b.done[n] = Date.now()) : delete b.done[n]; this._save();
+  }
 }
 
 class FirebaseStore {
@@ -68,8 +72,18 @@ class FirebaseStore {
   }
   async setLast(vid) { this.state.last = { vid, at: Date.now() }; return this._merge({ last: this.state.last }); }
   async saveQuiz(vid, c, n) { this.state.quiz[vid] = { c, n, at: Date.now() }; return this._merge({ quiz: { [vid]: this.state.quiz[vid] } }); }
-  // Só a posição de leitura vai para a conta; o texto do livro fica no aparelho.
-  async saveBook(id, pos) { this.state.books[id] = { ...pos, at: Date.now() }; return this._merge({ books: { [id]: this.state.books[id] } }); }
+  // Resumos de livros: última aula aberta e aulas marcadas como estudadas.
+  async setBookLast(id, n) {
+    this.state.books[id] = { ...this.state.books[id], last: n, at: Date.now() };
+    return this._merge({ books: { [id]: { last: n, at: this.state.books[id].at } } });
+  }
+  async setBookDone(id, n, on) {
+    const b = (this.state.books[id] = { done: {}, ...this.state.books[id] });
+    b.done = { ...b.done };
+    if (on) { b.done[n] = Date.now(); return this._merge({ books: { [id]: { done: { [n]: b.done[n] } } } }); }
+    delete b.done[n];
+    return this.f.updateDoc(this.ref, new this.f.FieldPath("books", id, "done", String(n)), this.f.deleteField()).catch(console.error);
+  }
 }
 
 export const store = isConfigured ? new FirebaseStore() : new LocalStore();

@@ -1,5 +1,4 @@
 import { store, isConfigured } from "./store.js";
-import { openReader, closeReader, loadText, importPdf, removeText } from "./reader.js";
 
 const $main = document.getElementById("main");
 const $account = document.getElementById("account");
@@ -480,33 +479,43 @@ function renderSermon(id) {
     </article>`;
 }
 
-/* ---------- Livros ---------- */
+/* ---------- Resumos de livros ---------- */
+// Cada livro vira uma sequência de aulas curtas, uma por capítulo.
 const bookById = (id) => BOOKS.find((b) => b.id === id);
+const bookDone = (b, n) => Boolean(store.state.books?.[b.id]?.done?.[n]);
+const bookStats = (b) => { const done = b.chapters.filter((c) => bookDone(b, c.n)).length; return { done, total: b.chapters.length, pct: Math.round((done / b.chapters.length) * 100) }; };
+const bookNext = (b) => {
+  const last = store.state.books?.[b.id]?.last;
+  const i = b.chapters.findIndex((c) => c.n === last);
+  if (i >= 0 && !bookDone(b, last)) return b.chapters[i];
+  return b.chapters.slice(Math.max(0, i)).find((c) => !bookDone(b, c.n)) || b.chapters.find((c) => !bookDone(b, c.n)) || b.chapters[0];
+};
 const cover = (b) => `
-  <span class="cover" aria-hidden="true">
+  <span class="cover" aria-hidden="true"${b.colors ? ` style="--c1:${b.colors[0]};--c2:${b.colors[1]}"` : ""}>
     <span class="cover-author">${esc(b.author)}</span>
-    <span class="cover-title">${esc(b.title)}</span>
+    <span class="cover-title${Math.max(...b.title.split(" ").map((w) => w.length)) > 11 ? " long" : ""}">${esc(b.title)}</span>
     <span class="cover-sub">${esc(b.subtitle || "")}</span>
   </span>`;
+const bookEdge = (b) => `<div class="edge" role="img" aria-label="${bookStats(b).done} de ${b.chapters.length} aulas estudadas">${b.chapters.map((c) => `<span class="${bookDone(b, c.n) ? "on" : ""}" title="${esc(`${c.n}. ${c.title}`)}"></span>`).join("")}</div>`;
 
 function renderBooks() {
   $main.innerHTML = `
     <section class="dash-hello perf-head">
-      <p class="eyebrow">Livros</p>
-      <h1>Livros para estudar</h1>
-      <p class="lead">Cada livro tem um resumo de estudo por capítulo e um leitor com páginas para ler o texto completo.</p>
+      <p class="eyebrow">Resumos de livros</p>
+      <h1>Resumos de livros</h1>
+      <p class="lead">Cada livro foi dividido em aulas curtas, uma por capítulo, com os pontos principais, os termos e perguntas para revisar.</p>
     </section>
     <ul class="shelf">
       ${BOOKS.map((b) => {
-        const pos = store.state.books?.[b.id];
+        const st = bookStats(b);
         return `
         <li>
           <a class="shelf-item" href="#/l/${b.id}">
             ${cover(b)}
             <span class="shelf-text">
               <span class="card-title">${esc(b.title)}</span>
-              <span class="shelf-meta">${esc(b.author)} · ${b.chapters.length} capítulos</span>
-              ${pos ? `<span class="meter"><span style="width:${Math.round(pos.pct * 100)}%"></span></span><span class="shelf-meta">${Math.round(pos.pct * 100)}% lido</span>` : ""}
+              <span class="shelf-meta">${esc(b.author)} · ${st.total} aulas</span>
+              ${st.done ? `<span class="meter"><span style="width:${st.pct}%"></span></span><span class="shelf-meta">${st.done} de ${st.total} estudadas</span>` : ""}
             </span>
           </a>
         </li>`;
@@ -514,122 +523,100 @@ function renderBooks() {
     </ul>`;
 }
 
-async function renderBook(id) {
+function renderBook(id) {
   const b = bookById(id); if (!b) return renderNotFound();
-  const pos = store.state.books?.[id];
-  const posCh = pos && b.chapters.find((c) => c.n === pos.ch);
+  const st = bookStats(b), nx = bookNext(b);
   $main.innerHTML = `
-    <nav class="crumbs"><a href="#/">Início</a><span aria-hidden="true">/</span><a href="#/l">Livros</a></nav>
+    <nav class="crumbs"><a href="#/">Início</a><span aria-hidden="true">/</span><a href="#/l">Resumos de livros</a></nav>
     <section class="book-hero">
       ${cover(b)}
       <div class="book-info">
-        <p class="eyebrow">${esc(b.author)}</p>
+        <p class="eyebrow">Resumo em aulas · ${esc(b.author)}</p>
         <h1>${esc(b.title)}</h1>
         <p class="book-sub">${esc(b.subtitle || "")}</p>
         <p class="lead">${esc(b.desc)}</p>
-        <div class="book-actions" id="book-actions"><span class="muted">Verificando o livro neste aparelho…</span></div>
-        ${pos ? `<p class="book-pos"><span class="meter"><span style="width:${Math.round(pos.pct * 100)}%"></span></span>${Math.round(pos.pct * 100)}% lido${posCh ? `, parou em ${esc(posCh.title)}` : ""}</p>` : ""}
+        ${bookEdge(b)}
+        <div class="hero-row">
+          <p>${st.done} de ${st.total} aulas estudadas</p>
+          <a class="btn" href="#/l/${b.id}/${nx.n}">${st.done === 0 ? "Começar pela aula 1" : st.done === st.total ? "Rever a aula 1" : `Continuar na aula ${nx.n}`}</a>
+        </div>
       </div>
     </section>
     <section class="study">
-      <header class="course-head"><h2>Resumo de estudo</h2><p>${b.chapters.length} capítulos em ${b.parts.length} partes</p></header>
-      ${b.parts.map((p) => `
+      ${bookGroups(b).map((g) => `
         <div class="study-part">
-          <h3><span>Parte ${p.n}</span>${esc(p.title)}</h3>
-          <ol class="study-list">
-            ${b.chapters.filter((c) => c.part === p.n).map((c) => `
-              <li><a href="#/l/${b.id}/${c.n}">
-                <span class="num">${c.n}</span>
-                <span class="lesson-text"><span class="lesson-title">${esc(c.title)}</span><span class="study-idea">${esc(c.idea)}</span></span>
-              </a></li>`).join("")}
+          ${g.part ? `<h2><span>Parte ${g.part.n}</span>${esc(g.part.title)}</h2>` : ""}
+          <ol class="lessons">
+            ${g.chapters.map((c) => `
+              <li class="lesson${bookDone(b, c.n) ? " done" : ""}${c.n === nx.n && st.done < st.total ? " next" : ""}">
+                <a href="#/l/${b.id}/${c.n}">
+                  <span class="num">${c.n}</span>
+                  <span class="lesson-text"><span class="lesson-title">${esc(c.title)}</span>${c.by ? `<span class="lesson-meta">${esc(c.by)}</span>` : ""}<span class="study-idea">${esc(c.idea)}</span></span>
+                  <span class="check" aria-label="${bookDone(b, c.n) ? "Estudada" : "Não estudada"}"></span>
+                </a>
+              </li>`).join("")}
           </ol>
         </div>`).join("")}
     </section>`;
-  bookActions(b);
 }
 
-// Botões de leitura: dependem de o PDF já ter sido aberto neste aparelho.
-async function bookActions(b) {
-  const box = document.getElementById("book-actions"); if (!box) return;
-  const text = await loadText(b.id);
-  if (!location.hash.startsWith(`#/l/${b.id}`)) return;
-  const pos = store.state.books?.[b.id];
-  if (text) {
-    box.innerHTML = `
-      <a class="btn" href="#/r/${b.id}">${pos ? "Continuar a leitura" : "Começar a ler"}</a>
-      <button class="btn-text" id="forget">Remover o texto deste aparelho</button>`;
-    document.getElementById("forget").onclick = async () => { await removeText(b.id); toast("Texto removido deste aparelho"); bookActions(b); };
-    return;
+// Agrupa as aulas em sequência: as de uma mesma parte ficam juntas; introdução e conclusão ficam soltas.
+function bookGroups(b) {
+  const groups = [];
+  for (const c of b.chapters) {
+    const last = groups.at(-1);
+    if (last && last.key === c.part) last.chapters.push(c);
+    else groups.push({ key: c.part, part: b.parts.find((p) => p.n === c.part), chapters: [c] });
   }
-  box.innerHTML = `
-    <label class="btn file-btn">Abrir o PDF do livro<input type="file" accept="application/pdf,.pdf" id="pdf" hidden></label>
-    <p class="file-note">O livro é lido e guardado só neste aparelho. Nada do texto é enviado para o site. Faça isso uma vez em cada aparelho onde quiser ler.</p>
-    <div class="import" id="import" hidden><span class="meter"><span style="width:0%"></span></span><span class="import-label">Preparando o livro…</span></div>`;
-  document.getElementById("pdf").onchange = async (e) => {
-    const file = e.target.files[0]; if (!file) return;
-    const bar = document.getElementById("import"); bar.hidden = false;
-    box.querySelector(".file-btn").hidden = true;
-    try {
-      const book = await importPdf(b.id, file, (f) => {
-        bar.querySelector(".meter span").style.width = `${Math.round(f * 100)}%`;
-        bar.querySelector(".import-label").textContent = `Lendo as páginas… ${Math.round(f * 100)}%`;
-      });
-      const found = book.chapters.filter((c) => /^Cap/.test(c.label)).length;
-      if (found !== b.chapters.length) toast(`Atenção: encontrei ${found} capítulos, o esperado eram ${b.chapters.length}. Confira se é o PDF certo.`);
-      else toast("Livro pronto para ler neste aparelho");
-      bookActions(b);
-    } catch (err) {
-      console.error(err);
-      toast("Não consegui ler esse PDF. Tente de novo.");
-      bookActions(b);
-    }
-  };
+  return groups;
 }
 
-function renderStudy(id, n) {
+function renderBookLesson(id, n) {
   const b = bookById(id); if (!b) return renderNotFound();
   const i = b.chapters.findIndex((c) => c.n === Number(n)); if (i < 0) return renderNotFound();
   const c = b.chapters[i], prev = b.chapters[i - 1], next = b.chapters[i + 1];
   const part = b.parts.find((p) => p.n === c.part);
+  const done = bookDone(b, c.n);
   $main.innerHTML = `
-    <nav class="crumbs"><a href="#/l">Livros</a><span aria-hidden="true">/</span><a href="#/l/${b.id}">${esc(b.title)}</a></nav>
+    <nav class="crumbs"><a href="#/l">Resumos de livros</a><span aria-hidden="true">/</span><a href="#/l/${b.id}">${esc(b.title)}</a></nav>
     <article class="sermon study-ch">
       <header class="lesson-head">
-        <p class="lesson-kicker">${part ? `Parte ${part.n} · ${esc(part.title)} · ` : ""}Capítulo ${c.n}</p>
+        <p class="lesson-kicker">Aula ${c.n} de ${b.chapters.length}${part ? ` · Parte ${part.n}: ${esc(part.title)}` : ""}${c.by ? ` · ${esc(c.by)}` : ""}</p>
         <h1>${esc(c.title)}</h1>
         <p class="study-big-idea">${esc(c.idea)}</p>
-        <a class="btn-text read-link" href="#/r/${b.id}/${c.n}">Ler este capítulo no livro</a>
       </header>
       <div class="sermon-body">
-        <h2>Resumo</h2>
-        ${c.summary.map((p) => `<p>${esc(p)}</p>`).join("")}
-        <h3>Pontos para guardar</h3>
+        ${c.lesson.map((p) => `<p>${esc(p)}</p>`).join("")}
+        <h3>Para guardar</h3>
         <ul class="study-points">${c.points.map((p) => `<li>${esc(p)}</li>`).join("")}</ul>
         ${c.terms?.length ? `<h3>Termos</h3><dl class="study-terms">${c.terms.map((t) => `<div><dt>${esc(t.t)}</dt><dd>${esc(t.d)}</dd></div>`).join("")}</dl>` : ""}
         ${c.verses?.length ? `<h3>Passagens</h3><p class="study-verses">${c.verses.map((v) => `<span>${esc(v)}</span>`).join("")}</p>` : ""}
-        ${c.questions?.length ? `<aside class="takeaway"><strong>Para revisar</strong><ol>${c.questions.map((q) => `<li>${esc(q)}</li>`).join("")}</ol></aside>` : ""}
+        ${c.questions?.length ? `
+          <h3>Perguntas de revisão</h3>
+          <p class="study-hint">Tente responder antes de abrir a resposta.</p>
+          <div class="study-qa">${c.questions.map((q, k) => `
+            <details><summary><span class="qn">${k + 1}.</span> ${esc(q)}</summary><p>${esc(c.answers?.[k] || "")}</p></details>`).join("")}
+          </div>` : ""}
+      </div>
+      <div class="watch-row">
+        <button class="toggle${done ? " on" : ""}" id="mark" aria-pressed="${done}">
+          <span class="box" aria-hidden="true"></span><span class="label">${done ? "Aula estudada" : "Marcar como estudada"}</span>
+        </button>
       </div>
       <nav class="pager">
-        ${prev ? `<a href="#/l/${b.id}/${prev.n}" class="pager-prev"><small>Capítulo ${prev.n}</small>${esc(prev.title)}</a>` : "<span></span>"}
-        ${next ? `<a href="#/l/${b.id}/${next.n}" class="pager-next"><small>Capítulo ${next.n}</small>${esc(next.title)}</a>` : `<a href="#/l/${b.id}" class="pager-next"><small>Fim do resumo</small>Voltar ao livro</a>`}
+        ${prev ? `<a href="#/l/${b.id}/${prev.n}" class="pager-prev"><small>Aula ${prev.n}</small>${esc(prev.title)}</a>` : "<span></span>"}
+        ${next ? `<a href="#/l/${b.id}/${next.n}" class="pager-next"><small>Aula ${next.n}</small>${esc(next.title)}</a>` : `<a href="#/l/${b.id}" class="pager-next"><small>Fim das aulas</small>Voltar ao livro</a>`}
       </nav>
     </article>`;
-}
-
-async function renderReader(id, n) {
-  const b = bookById(id); if (!b) return renderNotFound();
-  $main.innerHTML = `<p class="loading">Abrindo o livro…</p>`;
-  const text = await loadText(id);
-  if (!location.hash.startsWith(`#/r/${id}`)) return;
-  if (!text) { location.replace(`#/l/${id}`); toast("Abra o PDF do livro neste aparelho para ler."); return; }
-  const saved = store.state.books?.[id];
-  const start = n ? { ch: Number(n), b: 0 } : saved;
-  openReader({
-    root: $main, id, book: text, meta: b, start,
-    onSave: (pos) => store.saveBook(id, pos),
-    onExit: () => { location.hash = `#/l/${id}`; },
-    summaryHref: (ch) => b.chapters.some((c) => c.n === ch) ? `#/l/${id}/${ch}` : null,
-  });
+  store.setBookLast(b.id, c.n);
+  document.getElementById("mark").onclick = async (e) => {
+    const on = !bookDone(b, c.n);
+    await store.setBookDone(b.id, c.n, on);
+    const btn = e.currentTarget;
+    btn.classList.toggle("on", on); btn.setAttribute("aria-pressed", on);
+    btn.querySelector(".label").textContent = on ? "Aula estudada" : "Marcar como estudada";
+    if (on) toast(next ? "Aula marcada. Próxima: " + next.title : "Você terminou todas as aulas deste livro");
+  };
 }
 
 function renderNotFound() {
@@ -642,13 +629,11 @@ function route() {
   const [, kind, rawId, sub] = location.hash.split("/");
   const [id, anchor] = (rawId || "").split("#");
   if (kind !== "a") teardownPlayer();
-  if (kind !== "r") closeReader();
   document.getElementById("topnav").hidden = !store.user;
-  document.querySelectorAll("[data-nav]").forEach((a) => a.toggleAttribute("aria-current", a.dataset.nav === (["p", "s", "l"].includes(kind) ? kind : kind === "r" ? "l" : kind ? "" : "home")));
+  document.querySelectorAll("[data-nav]").forEach((a) => a.toggleAttribute("aria-current", a.dataset.nav === (["p", "s", "l"].includes(kind) ? kind : kind ? "" : "home")));
   if (!store.user) { renderSignIn(); return; }
   if (kind === "s") id ? renderSermon(id) : renderSermons();
-  else if (kind === "l") id ? (sub ? renderStudy(id, sub) : renderBook(id)) : renderBooks();
-  else if (kind === "r") renderReader(id, sub);
+  else if (kind === "l") id ? (sub ? renderBookLesson(id, sub) : renderBook(id)) : renderBooks();
   else if (kind === "m") renderSubject(id);
   else if (kind === "a") renderLesson(id);
   else if (kind === "p") renderPerf();
@@ -669,6 +654,8 @@ document.getElementById("theme").onclick = () => {
 
 (async function boot() {
   $main.innerHTML = `<p class="loading">Carregando aulas…</p>`;
+  // O leitor de livros foi removido: apaga o texto que tenha ficado guardado neste aparelho.
+  try { indexedDB.deleteDatabase("estudos-livros"); } catch { /* ignora */ }
   await loadData();
   if (!isConfigured) { $banner.hidden = false; $banner.textContent = "Modo demonstração: o progresso fica salvo só neste navegador. Configure o Firebase para ativar o login com Google."; }
   await store.init(() => { ready = true; renderAccount(); route(); });
