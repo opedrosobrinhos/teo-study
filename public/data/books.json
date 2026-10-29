@@ -4737,5 +4737,1870 @@
     ]
    }
   ]
+ },
+ {
+  "id": "comentario-genesis-calvino",
+  "title": "Comentário Bíblico: Gênesis",
+  "subtitle": "",
+  "author": "João Calvino",
+  "colors": [
+   "#4a3a1c",
+   "#2e2410"
+  ],
+  "desc": "João Calvino abre seu comentário com um “Argumento” que ensina como ler Gênesis: com sobriedade, olhando o mundo como teatro da glória de Deus, mas pelas lentes da Escritura e a partir de Cristo. Em seguida, comenta o livro versículo por versículo. Estas aulas percorrem o Argumento e alguns capítulos centrais: a criação, a queda, a fé de Abraão, o sacrifício de Isaque e o perdão de José.",
+  "parts": [
+   {
+    "n": 1,
+    "title": "O Argumento"
+   },
+   {
+    "n": 2,
+    "title": "O comentário"
+   }
+  ],
+  "chapters": [
+   {
+    "n": 1,
+    "part": 1,
+    "title": "A atitude do leitor e a autoridade de Moisés",
+    "idea": "Gênesis deve ser lido com um espírito sóbrio e disposto a aprender, confiando que Moisés escreveu com autoridade dada por Deus.",
+    "lesson": [
+     "Calvino abre seu comentário com uma introdução que ele chama de “Argumento”, em que explica por que Moisés começou pela criação e como o leitor deve se aproximar do texto. A primeira lição é sobre atitude: a sabedoria de Deus na criação é grande demais para ser explicada à altura. Por isso, quem deseja avançar no estudo precisa vir com um espírito sóbrio, manso e disposto a aprender.",
+     "Calvino reconhece que talvez alcancemos pouco, mas insiste que vale a pena progredir um pouco a cada dia, durante a vida inteira.",
+     "A segunda questão do Argumento é a autoridade de Moisés. Havia quem zombasse, perguntando como Moisés poderia saber o que aconteceu na criação. Calvino responde com dois argumentos.",
+     "O primeiro é que Moisés profetizou fatos que só se cumpriram muitos séculos depois, como a vocação dos gentios. Se ele previu o futuro pelo Espírito, podia muito bem narrar o passado ensinado por Deus.",
+     "O segundo argumento é que Moisés não inventou nada novo. Ele registrou por escrito aquilo que os patriarcas já transmitiam de geração em geração. Deus quis que essa história fosse escrita para que não se corrompesse com o passar do tempo."
+    ],
+    "points": [
+     "O “Argumento” é a introdução de Calvino e funciona como chave de leitura do comentário.",
+     "A sabedoria de Deus na criação ultrapassa qualquer explicação humana.",
+     "O leitor deve vir com espírito sóbrio, manso e disposto a aprender, progredindo um pouco a cada dia.",
+     "Moisés profetizou o futuro pelo Espírito, por isso podia narrar o passado ensinado por Deus.",
+     "Moisés registrou o que os patriarcas já transmitiam, e Deus quis essa história escrita para que não se corrompesse."
+    ],
+    "terms": [
+     {
+      "t": "Argumento",
+      "d": "Introdução de Calvino ao livro de Gênesis, em que ele explica por que Moisés começou pela criação e como o leitor deve se aproximar do texto."
+     }
+    ],
+    "verses": [],
+    "questions": [
+     "Que atitude Calvino espera de quem estuda a obra da criação?",
+     "Qual é o primeiro argumento de Calvino em defesa da autoridade de Moisés?",
+     "Por que, segundo Calvino, Deus quis que a história dos patriarcas fosse escrita?"
+    ],
+    "answers": [
+     "Um espírito sóbrio, manso e disposto a aprender, contente em progredir um pouco a cada dia, a vida inteira.",
+     "Moisés profetizou fatos que só se cumpriram séculos depois, como a vocação dos gentios; quem previu o futuro pelo Espírito podia narrar o passado ensinado por Deus.",
+     "Para que essa história, já transmitida de geração em geração, não se corrompesse com o passar do tempo."
+    ]
+   },
+   {
+    "n": 2,
+    "part": 1,
+    "title": "O mundo como espelho e a Escritura como óculos",
+    "idea": "O mundo é um teatro da glória de Deus, mas, por causa do pecado, só o lemos bem com as lentes da Escritura.",
+    "lesson": [
+     "Deus é invisível, mas se faz conhecer por suas obras. Calvino compara o mundo a um espelho e a um palco: fomos colocados nele para contemplar a glória de Deus e desfrutar das riquezas que Ele preparou para nós.",
+     "A partir daí, Calvino condena dois erros opostos. O primeiro é estudar a natureza esquecendo o Criador, o que é ingratidão. O segundo é tentar investigar diretamente a essência de Deus, com curiosidade vã.",
+     "Contra os que perguntam o que Deus fazia antes de criar o mundo, Calvino cita a resposta de um homem piedoso: Ele estava preparando o inferno para os curiosos. A regra é contentar-se com o que Deus revelou e não especular onde Ele se calou.",
+     "Mas a criação não basta para a salvação, porque nossos olhos estão enfraquecidos pelo pecado.",
+     "Por isso Deus acrescentou a Escritura como guia e mestre. Calvino a compara a lentes, ou óculos, para olhos fracos."
+    ],
+    "points": [
+     "Deus, que é invisível, se faz conhecer por suas obras.",
+     "O mundo é espelho e palco: lugar para contemplar a glória de Deus e desfrutar dos seus dons.",
+     "Estudar a natureza esquecendo o Criador é ingratidão.",
+     "Investigar a essência de Deus com curiosidade vã é o erro oposto; devemos nos contentar com o que Ele revelou.",
+     "Por causa do pecado, a criação não basta para a salvação, e a Escritura funciona como óculos para olhos fracos."
+    ],
+    "terms": [
+     {
+      "t": "Teatro da glória de Deus",
+      "d": "Imagem usada por Calvino para o mundo: o palco em que fomos colocados para contemplar a glória de Deus."
+     },
+     {
+      "t": "Curiosidade vã",
+      "d": "A tentativa de investigar diretamente a essência de Deus, em vez de contentar-se com o que Ele revelou."
+     },
+     {
+      "t": "Óculos da Escritura",
+      "d": "Comparação de Calvino: a Escritura funciona como lentes para olhos enfraquecidos pelo pecado."
+     }
+    ],
+    "verses": [],
+    "questions": [
+     "Quais são as duas imagens que Calvino usa para descrever o mundo, e o que elas ensinam?",
+     "Quais são os dois erros opostos que Calvino condena no estudo da criação?",
+     "Por que Deus acrescentou a Escritura à revelação da criação?"
+    ],
+    "answers": [
+     "Espelho e palco (teatro): fomos colocados no mundo para contemplar a glória de Deus e desfrutar das riquezas que Ele preparou para nós.",
+     "Estudar a natureza esquecendo o Criador, o que é ingratidão, e tentar investigar diretamente a essência de Deus com curiosidade vã.",
+     "Porque nossos olhos estão enfraquecidos pelo pecado e a criação não basta para a salvação; a Escritura funciona como guia, mestre e lentes para olhos fracos."
+    ]
+   },
+   {
+    "n": 3,
+    "part": 1,
+    "title": "Cristo no centro e a igreja desde o princípio",
+    "idea": "Só depois de aprender na escola de Cristo podemos ler a criação e a história de Gênesis, que mostra a igreja vivendo da mesma promessa desde o princípio.",
+    "lesson": [
+     "Calvino responde a uma objeção. Paulo afirma que o mundo não conheceu a Deus pela sabedoria (1Co 1.21). Se é assim, por que contemplar a criação? A resposta de Calvino é que é inútil filosofar sobre o mundo antes de ser humilhado pela pregação do evangelho. Só depois de aprender na escola de Cristo podemos olhar para a criação e ver nela a confirmação do verdadeiro Deus. Cristo é a imagem pela qual Deus se torna visível.",
+     "Calvino também resume todo o livro de Gênesis. O homem foi colocado no mundo como num palco, para adorar o Criador. Tudo foi criado para o seu uso, a fim de que ele se dedicasse à obediência a Deus. Ele recebeu inteligência e razão para meditar numa vida melhor e se dirigir a Deus, cuja imagem trazia.",
+     "Então veio a queda. O homem ficou cego na mente, perverso no coração, corrompido em todas as partes e sob a sentença da morte. Logo depois aparece a restauração, na qual Cristo brilha com o benefício da redenção. Daí em diante, Gênesis mostra a providência de Deus governando e protegendo a igreja e o verdadeiro culto, e apresenta os patriarcas como exemplos de como suportar a cruz.",
+     "Para Calvino, a queda de Adão é o ponto de partida da história da salvação. Recebemos vida nova pela pura graça, e os patriarcas foram participantes dessa vida pela fé na mesma promessa. Eles tiveram Cristo como garantia de salvação antes mesmo de Ele ser manifestado. Isso também separa o culto verdadeiro dos cultos inventados pelos homens."
+    ],
+    "points": [
+     "É inútil filosofar sobre o mundo antes de ser humilhado pela pregação do evangelho.",
+     "Depois de aprender na escola de Cristo, vemos na criação a confirmação do verdadeiro Deus.",
+     "Gênesis mostra o homem criado para adorar, a queda que o corrompeu e a restauração em Cristo.",
+     "O restante do livro revela a providência de Deus protegendo a igreja e os patriarcas como exemplos de como suportar a cruz.",
+     "Os patriarcas foram salvos pela fé na mesma promessa e tiveram Cristo como garantia antes da sua manifestação.",
+     "Isso também separa o culto verdadeiro dos cultos inventados pelos homens."
+    ],
+    "terms": [
+     {
+      "t": "Escola de Cristo",
+      "d": "Expressão de Calvino para o aprendizado de quem foi humilhado pela pregação do evangelho; só depois dele podemos ver na criação a confirmação do verdadeiro Deus."
+     },
+     {
+      "t": "Providência",
+      "d": "Deus governando e protegendo a igreja e o verdadeiro culto, como Gênesis mostra depois da queda."
+     }
+    ],
+    "verses": [
+     "1Co 1.21"
+    ],
+    "questions": [
+     "Como Calvino responde à objeção baseada em 1Co 1.21?",
+     "Quais são as etapas do resumo de Gênesis segundo Calvino?",
+     "Em que sentido a igreja existe “desde o princípio”?"
+    ],
+    "answers": [
+     "Contemplar a criação só é proveitoso depois de ser humilhado pelo evangelho e aprender na escola de Cristo; então vemos nela a confirmação do verdadeiro Deus.",
+     "O homem posto no mundo para adorar; tudo criado para seu uso e obediência; a razão e a imagem de Deus; a queda; a restauração em Cristo; e a providência protegendo a igreja e os patriarcas.",
+     "Desde a queda de Adão, os fiéis recebem vida nova pela pura graça; os patriarcas participaram dela pela fé na mesma promessa e tiveram Cristo como garantia antes de Ele ser manifestado."
+    ]
+   },
+   {
+    "n": 4,
+    "part": 2,
+    "title": "Gênesis 1: o princípio, o nada e o Espírito",
+    "idea": "Nos primeiros versículos de Gênesis, Calvino mostra que o mundo veio do nada, começou como um caos vazio e era sustentado pela força secreta do Espírito eterno.",
+    "lesson": [
+     "Ao comentar os primeiros versículos de Gênesis, Calvino trata de quatro expressões.",
+     "A primeira é “no princípio”. Havia quem lesse “princípio” como uma referência a Cristo. Calvino considera essa leitura frívola. Para ele, o sentido é simples: o mundo não surgiu pronto, mas começou como um caos vazio.",
+     "Em seguida, ele observa o verbo “criou”, em hebraico bara. Esse verbo indica que o mundo veio do nada. Com isso, Calvino refuta quem acreditava na eternidade da matéria.",
+     "O terceiro ponto é o nome de Deus, Elohim. Embora o nome esteja no plural, Calvino não o usa como prova da Trindade, porque considera o argumento fraco. Ele prefere tirar conclusões sólidas de textos mais claros.",
+     "Por fim, Calvino comenta a menção ao “Espírito de Deus”. Não se trata do vento, mas do Espírito eterno, cuja força secreta sustentava a massa ainda sem forma."
+    ],
+    "points": [
+     "“No princípio” não se refere a Cristo; indica que o mundo começou como um caos vazio.",
+     "O verbo bara mostra que o mundo veio do nada, contra a ideia da eternidade da matéria.",
+     "Calvino não usa o plural Elohim como prova da Trindade, preferindo textos mais claros.",
+     "O “Espírito de Deus” não é o vento, mas o Espírito eterno que sustentava a massa sem forma."
+    ],
+    "terms": [
+     {
+      "t": "Bara",
+      "d": "Verbo hebraico traduzido por “criou”, que, segundo Calvino, indica que o mundo veio do nada."
+     },
+     {
+      "t": "Elohim",
+      "d": "Nome hebraico de Deus em Gênesis 1, que está no plural."
+     },
+     {
+      "t": "Eternidade da matéria",
+      "d": "A crença na eternidade da matéria, refutada por Calvino a partir do verbo bara, que indica que o mundo veio do nada."
+     }
+    ],
+    "verses": [
+     "Gn 1"
+    ],
+    "questions": [
+     "Por que Calvino rejeita a leitura de “princípio” como referência a Cristo?",
+     "O que o verbo bara ensina, e que ideia ele refuta?",
+     "Por que Calvino não usa o plural Elohim como prova da Trindade?"
+    ],
+    "answers": [
+     "Porque a considera frívola; o sentido simples é que o mundo não surgiu pronto, mas começou como um caos vazio.",
+     "Ensina que o mundo veio do nada e refuta quem acreditava na eternidade da matéria.",
+     "Porque considera o argumento fraco e prefere tirar conclusões sólidas de textos mais claros."
+    ]
+   },
+   {
+    "n": 5,
+    "part": 2,
+    "title": "Gênesis 1–2: “Façamos o homem” e a imagem de Deus",
+    "idea": "A imagem de Deus era a integridade de toda a natureza humana, e a melhor forma de entendê-la é olhar para a sua restauração em Cristo.",
+    "lesson": [
+     "Até Gênesis 1.26, Deus apenas ordenava. Aqui Ele diz “façamos o homem”, como quem delibera. Para Calvino, essa mudança mostra a dignidade especial do ser humano. Ele rejeita as interpretações de que Deus estaria falando com a terra ou com os anjos e conclui que há uma pluralidade de pessoas em Deus.",
+     "Depois vem a expressão “imagem e semelhança”. Era comum distinguir as duas palavras: a imagem seria a substância e a semelhança seriam os dons. Calvino discorda. Para ele, trata-se de uma repetição típica do hebraico, em que a segunda palavra explica a primeira. Ele também considera especulativa a ideia de Agostinho de ver uma trindade nas faculdades da alma.",
+     "Então, onde está a imagem de Deus? Calvino descarta duas respostas. A imagem não está no corpo, contra os antropomorfitas. E também não está apenas no domínio do homem sobre a criação, contra Crisóstomo.",
+     "Para Calvino, a melhor forma de entender a imagem é pela sua restauração. Paulo diz que a regeneração renova a imagem em conhecimento, justiça e santidade (Cl 3.10; Ef 4.24). Portanto, a imagem era a integridade de toda a natureza humana: mente reta, afetos ordenados e sentidos regulados. Sua sede principal estava na mente e no coração."
+    ],
+    "points": [
+     "Em “façamos o homem”, Deus delibera em vez de apenas ordenar, mostrando a dignidade do ser humano.",
+     "Calvino rejeita que Deus falasse com a terra ou com os anjos e vê ali uma pluralidade de pessoas em Deus.",
+     "“Imagem e semelhança” é uma repetição hebraica, não duas realidades distintas.",
+     "A imagem não está no corpo nem apenas no domínio sobre a criação.",
+     "A restauração em conhecimento, justiça e santidade revela o que era a imagem: a integridade de toda a natureza humana.",
+     "A sede principal da imagem estava na mente e no coração."
+    ],
+    "terms": [
+     {
+      "t": "Imagem de Deus",
+      "d": "Para Calvino, a integridade original de toda a natureza humana: mente reta, afetos ordenados e sentidos regulados."
+     },
+     {
+      "t": "Antropomorfitas",
+      "d": "Os que localizavam a imagem de Deus no corpo, posição que Calvino rejeita."
+     },
+     {
+      "t": "Regeneração",
+      "d": "Segundo Paulo, citado por Calvino, ela renova a imagem de Deus em conhecimento, justiça e santidade."
+     }
+    ],
+    "verses": [
+     "Gn 1.26",
+     "Cl 3.10",
+     "Ef 4.24"
+    ],
+    "questions": [
+     "O que a expressão “façamos o homem” revela, segundo Calvino?",
+     "Como Calvino entende a expressão “imagem e semelhança”?",
+     "Por que Calvino olha para a restauração para definir a imagem de Deus, e a que conclusão chega?"
+    ],
+    "answers": [
+     "Que Deus, que antes apenas ordenava, agora delibera, mostrando a dignidade especial do ser humano; e que há uma pluralidade de pessoas em Deus.",
+     "Como uma repetição típica do hebraico, em que a segunda palavra explica a primeira, e não como imagem = substância e semelhança = dons.",
+     "Porque a regeneração renova a imagem em conhecimento, justiça e santidade; logo, a imagem era a integridade de toda a natureza humana, com sede principal na mente e no coração."
+    ]
+   },
+   {
+    "n": 6,
+    "part": 2,
+    "title": "Gênesis 3: a queda",
+    "idea": "Adão não foi criado para as misérias que hoje sofremos, mas caiu nelas por culpa própria; quem reclama de Deus deveria antes confessar o pecado de Adão e chorar a própria culpa.",
+    "lesson": [
+     "Gênesis 3 mostra o homem, enganado por Satanás, abandonando o seu Criador e ficando tão degenerado que a imagem de Deus se apagou nele. Junto com o homem, todo o mundo criado para ele também decaiu.",
+     "Sobre a serpente, Calvino diz que a astúcia era um dom natural do animal, e Satanás a usou como instrumento. Moisés não cita Satanás pelo nome porque estava se adaptando a um povo ainda na “infância” e usou linguagem simples. A luz plena ficou reservada para o reino de Cristo. Os profetas mostram claramente que Satanás é o inimigo por trás da serpente.",
+     "Calvino também afirma que Satanás não foi criado mau. Sua malícia veio da rebelião, não da natureza. Atribuir a Deus a criação de algo mau é, diz Calvino, um delírio.",
+     "O propósito do relato é mostrar que Adão não foi criado para as misérias que hoje sofremos, mas caiu nelas por culpa própria. Quem reclama de Deus pelas suas desgraças deveria antes confessar o pecado de Adão e chorar a própria culpa.",
+     "Resta a pergunta que, segundo Calvino, mentes inquietas sempre fazem: por que Deus permitiu a tentação? Calvino aceita que Deus a permitiu, conforme o seu conselho, e chama o leitor à sobriedade em vez da especulação."
+    ],
+    "points": [
+     "Enganado por Satanás, o homem abandonou o Criador e a imagem de Deus se apagou nele.",
+     "Todo o mundo criado para o homem decaiu junto com ele.",
+     "A astúcia da serpente era natural, e Satanás a usou como instrumento.",
+     "Moisés usou linguagem simples para um povo na “infância”; a luz plena ficou para o reino de Cristo.",
+     "Satanás não foi criado mau; sua malícia veio da rebelião.",
+     "Diante da permissão da tentação, Calvino chama à sobriedade e não à especulação."
+    ],
+    "terms": [
+     {
+      "t": "Serpente",
+      "d": "Animal cuja astúcia era um dom natural e que Satanás usou como instrumento."
+     }
+    ],
+    "verses": [
+     "Gn 3"
+    ],
+    "questions": [
+     "Por que, segundo Calvino, Moisés não cita Satanás pelo nome em Gênesis 3?",
+     "De onde veio a malícia de Satanás?",
+     "Qual é o propósito do relato da queda, e que atitude ele exige de quem reclama de Deus?"
+    ],
+    "answers": [
+     "Porque se adaptou a um povo ainda na “infância”, usando linguagem simples; a luz plena ficou reservada para o reino de Cristo, e os profetas depois mostram Satanás por trás da serpente.",
+     "Da sua rebelião, não da natureza; Deus não o criou mau.",
+     "Mostrar que Adão não foi criado para as misérias atuais, mas caiu nelas por culpa própria; quem reclama de Deus deveria confessar o pecado de Adão e chorar a própria culpa."
+    ]
+   },
+   {
+    "n": 7,
+    "part": 2,
+    "title": "Gênesis 15: a fé de Abraão e a justificação",
+    "idea": "Abraão foi justificado ao abraçar Deus como Pai pela fé, e essa justificação pela fé vale do início ao fim da vida do crente.",
+    "lesson": [
+     "Em Gênesis 15.1, depois da vitória sobre os reis, Abraão estava exposto à inveja e a perigos, e podia ser tentado a buscar uma vida confortável. Deus se antecipa e diz: “não temas”. Assim, renova em Abraão a memória da graça espiritual, para que ele desprezasse o favor do mundo.",
+     "Em seguida, Abraão se queixa de continuar sem filhos. Calvino lê essa queixa não como afeto carnal, mas como expressão de um desejo piedoso pela bênção prometida. Por isso o desejo foi aprovado por Deus.",
+     "O versículo 6 diz que a fé de Abraão lhe foi imputada como justiça. Esse é o ponto teológico mais desenvolvido por Calvino. Imputar significa contar algo na conta de alguém, como em Levítico 7.18 e 2 Samuel 19.19.",
+     "Abraão não foi justificado por crer numa promessa isolada, mas por abraçar Deus como Pai, confiando na sua bondade gratuita. A fé justifica porque nos reconcilia com Deus, e não por mérito próprio. A fé é causa formal, não eficiente: ela recebe a justiça que Deus oferece gratuitamente.",
+     "Por fim, Calvino chama atenção para o momento. Abraão foi justificado pela fé muitos anos depois de ter sido chamado, quando já levava uma vida santa. Logo, mesmo os santos são justificados pela fé até o fim da vida. Com isso, Calvino refuta quem diz que a fé só inicia a justificação e depois as obras a completam."
+    ],
+    "points": [
+     "Com “não temas”, Deus renova em Abraão a memória da graça para que ele desprezasse o favor do mundo.",
+     "A queixa de Abraão por não ter filhos expressa um desejo piedoso pela bênção prometida.",
+     "Imputar é contar algo na conta de alguém.",
+     "Abraão foi justificado por abraçar Deus como Pai, confiando na sua bondade gratuita.",
+     "A fé justifica porque nos reconcilia com Deus, não por mérito; é causa formal, não eficiente, e recebe a justiça que Deus oferece gratuitamente.",
+     "Abraão foi justificado já vivendo uma vida santa; a justificação pela fé vale até o fim da vida."
+    ],
+    "terms": [
+     {
+      "t": "Imputar",
+      "d": "Contar algo na conta de alguém; em Gn 15.6, a fé de Abraão lhe é imputada como justiça."
+     },
+     {
+      "t": "Causa formal e causa eficiente",
+      "d": "Distinção usada por Calvino: a fé é causa formal, não eficiente, da justificação; ela recebe a justiça que Deus oferece gratuitamente."
+     }
+    ],
+    "verses": [
+     "Gn 15.1",
+     "Gn 15.6",
+     "Lv 7.18",
+     "2Sm 19.19"
+    ],
+    "questions": [
+     "Por que Deus diz “não temas” a Abraão logo depois da vitória sobre os reis?",
+     "O que significa dizer que a fé é causa formal, e não eficiente, da justificação?",
+     "Que conclusão Calvino tira do fato de Abraão ter sido justificado muitos anos depois do seu chamado?"
+    ],
+    "answers": [
+     "Porque Abraão estava exposto a inveja e perigos e podia ser tentado a buscar conforto; Deus renova nele a memória da graça espiritual para que desprezasse o favor do mundo.",
+     "Que a fé não justifica por mérito próprio; ela recebe a justiça que Deus oferece gratuitamente e nos reconcilia com Ele.",
+     "Que mesmo os santos são justificados pela fé até o fim da vida, o que refuta a ideia de que a fé só inicia a justificação e as obras a completam."
+    ]
+   },
+   {
+    "n": 8,
+    "part": 2,
+    "title": "Gênesis 22: o sacrifício de Isaque",
+    "idea": "A prova mais severa de Abraão foi ver a fé ferida pela própria palavra de Deus, que parecia contradizer a promessa.",
+    "lesson": [
+     "Quando chega a Gênesis 22, Abraão já havia passado por muitas provas: o exílio, a fome, a separação de Ló, a guerra e a expulsão de Ismael. Agora vem a prova final e a mais severa de todas.",
+     "O texto diz que Deus provou Abraão. Tiago diz que Deus não tenta ninguém para o mal; a tentação vem dos nossos desejos. Mas Deus prova os seus servos para examinar a fé.",
+     "O que torna essa prova tão dura? Calvino responde que Deus feriu a fé de Abraão com a sua própria palavra. Se a ordem tivesse vindo de outro, Abraão a rejeitaria como engano de Satanás. Mas ela veio de Deus e parecia contradizer a promessa feita sobre Isaque. Para Calvino, esse conflito interno era o maior teste possível."
+    ],
+    "points": [
+     "Abraão já havia enfrentado exílio, fome, separação de Ló, guerra e expulsão de Ismael.",
+     "O sacrifício de Isaque é a prova final e mais severa.",
+     "Deus não tenta ninguém para o mal, mas prova os seus servos para examinar a fé.",
+     "Deus feriu a fé de Abraão com a sua própria palavra.",
+     "A ordem parecia contradizer a promessa sobre Isaque, e esse conflito era o maior teste possível."
+    ],
+    "terms": [
+     {
+      "t": "Provar",
+      "d": "Examinar a fé de alguém; diferente de tentar, que é induzir ao mal, algo que Deus não faz."
+     }
+    ],
+    "verses": [
+     "Gn 22"
+    ],
+    "questions": [
+     "Quais provas Abraão já havia enfrentado antes de Gênesis 22?",
+     "Como Calvino relaciona “Deus provou Abraão” com o ensino de Tiago de que Deus não tenta ninguém para o mal?",
+     "Por que essa foi a prova mais severa de Abraão?"
+    ],
+    "answers": [
+     "O exílio, a fome, a separação de Ló, a guerra e a expulsão de Ismael.",
+     "Deus não tenta para o mal, pois a tentação vem dos nossos desejos, mas prova os seus servos para examinar a fé.",
+     "Porque a ordem veio do próprio Deus, e não poderia ser rejeitada como engano de Satanás, e parecia contradizer a promessa que Ele havia feito sobre Isaque."
+    ]
+   },
+   {
+    "n": 9,
+    "part": 2,
+    "title": "Gênesis 50: providência e perdão",
+    "idea": "Porque Deus governa até as más intenções dos homens, José se sente obrigado não só a perdoar, mas a fazer o bem aos irmãos.",
+    "lesson": [
+     "Sobre o luto e o funeral de Jacó, Calvino faz duas observações. Por um lado, a dor excessiva é uma falha. Por outro, o funeral solene tinha um propósito: manter viva a esperança da terra prometida.",
+     "Depois disso, os irmãos de José lhe pedem perdão. Mesmo anos depois, a consciência pesada não lhes dava paz. Deus os deixou nessa angústia para humilhá-los e para nos ensinar que a má consciência é seu próprio carrasco. A paz só vem quando voltamos à graça de Deus.",
+     "José responde: “Estou eu no lugar de Deus?” (Gn 50.19). Ele reconhece que está sob o domínio de Deus e que não cabe a ele tomar vingança. Para Calvino, o desejo de vingança deve ser freado pela lembrança de quem somos diante de Deus.",
+     "Em seguida, José diz: “Vós pensastes o mal contra mim” (Gn 50.20). Calvino observa que José considera a providência de Deus de tal forma que se impõe a obrigação não só de perdoar, mas de fazer o bem. Deus governa até as más intenções dos homens para cumprir os seus propósitos."
+    ],
+    "points": [
+     "A dor excessiva no luto é uma falha, mas o funeral de Jacó mantinha viva a esperança da terra prometida.",
+     "A consciência pesada dos irmãos mostra que a má consciência é seu próprio carrasco.",
+     "A paz só vem quando voltamos à graça de Deus.",
+     "José reconhece que não está no lugar de Deus e que não lhe cabe vingar-se.",
+     "A providência leva José a perdoar e também a fazer o bem.",
+     "Deus governa até as más intenções dos homens para cumprir os seus propósitos."
+    ],
+    "terms": [
+     {
+      "t": "Providência",
+      "d": "O governo de Deus sobre todas as coisas, inclusive sobre o mal praticado pelos homens, para cumprir os seus propósitos."
+     },
+     {
+      "t": "Má consciência",
+      "d": "A consciência pesada que não dava paz aos irmãos de José; para Calvino, ela é seu próprio carrasco, e a paz só vem quando voltamos à graça de Deus."
+     }
+    ],
+    "verses": [
+     "Gn 50.19",
+     "Gn 50.20"
+    ],
+    "questions": [
+     "Que propósito Calvino vê no funeral solene de Jacó?",
+     "Por que Deus deixou os irmãos de José na angústia da consciência pesada?",
+     "Que obrigação José tira da sua visão da providência em Gn 50.20?"
+    ],
+    "answers": [
+     "Manter viva a esperança da terra prometida.",
+     "Para humilhá-los e para nos ensinar que a má consciência é seu próprio carrasco; a paz só vem quando voltamos à graça de Deus.",
+     "A obrigação não só de perdoar os irmãos, mas também de lhes fazer o bem, porque Deus governa até as más intenções dos homens."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "amando-a-deus-no-mundo",
+  "title": "Amando a Deus no Mundo",
+  "subtitle": "Por uma cosmovisão reformada",
+  "author": "Heber Carlos de Campos Júnior",
+  "colors": [
+   "#3d4a24",
+   "#262f15"
+  ],
+  "desc": "Heber Campos Jr. apresenta os fundamentos de uma cosmovisão reformada a partir da exposição do livro de Daniel. Depois de definir o que é cosmovisão, o autor percorre os quatro pilares da história bíblica (criação, queda, redenção e consumação) e combate o dualismo entre sagrado e secular, que ele aponta como o grande inimigo.",
+  "parts": [
+   {
+    "n": 1,
+    "title": "Introduzindo cosmovisão"
+   },
+   {
+    "n": 2,
+    "title": "Fundamentos da cosmovisão reformada"
+   }
+  ],
+  "chapters": [
+   {
+    "n": 1,
+    "part": 1,
+    "title": "A proposta do livro e suas tríades",
+    "idea": "Heber Campos Jr. une exposição de Daniel, teologia sistemática reformada e aplicação para mostrar que os princípios da cosmovisão reformada vêm da Escritura.",
+    "lesson": [
+     "Amando a Deus no Mundo resulta de uma década de ensino sobre cosmovisão em seminários e na igreja. O subtítulo anuncia o alvo: por uma cosmovisão reformada.",
+     "O autor reúne três interesses. O primeiro é a exposição bíblica: em vez de começar pela filosofia, ele expõe o livro de Daniel, para mostrar que os princípios da cosmovisão reformada vêm da Escritura. O segundo é a teologia sistemática: corrigir equívocos de outros livros de cosmovisão, apresentando os pilares a partir da teologia reformada. O terceiro é a aplicação, que não fica só no final, mas aparece espalhada ao longo do livro.",
+     "O livro tem duas partes. A Parte 1, Introduzindo cosmovisão, trata de conceitos e história em três capítulos: o que é cosmovisão, as definições do termo e as mudanças de cosmovisão. Na Parte 2, Fundamentos da cosmovisão reformada, os três interesses formam tríades: um capítulo sobre Daniel, um capítulo teológico e um capítulo de aplicação. São sete tríades, de Daniel 1 até Daniel 7 a 12.",
+     "Cada capítulo de aplicação usa só o que foi ensinado até ali. Por isso, o capítulo sobre arte usa criação e queda, e o de missão usa redenção e consumação. Os temas de aplicação são ciência, política, arte, educação, ética, trabalho e missão.",
+     "Nestas aulas seguiremos esse caminho: primeiro, o que é cosmovisão; depois, as tríades. Uma das ideias-chave do livro é que Daniel é o modelo de quem serve na Babilônia sem se contaminar."
+    ],
+    "points": [
+     "O livro resulta de uma década de ensino sobre cosmovisão em seminários e na igreja.",
+     "Três interesses guiam a obra: exposição bíblica, teologia sistemática e aplicação.",
+     "O autor parte do livro de Daniel, e não da filosofia, para mostrar que a cosmovisão reformada vem da Escritura.",
+     "A Parte 2 é organizada em tríades: Daniel, teologia e aplicação.",
+     "Cada capítulo de aplicação usa só o que já foi ensinado até ali."
+    ],
+    "terms": [
+     {
+      "t": "Cosmovisão reformada",
+      "d": "A cosmovisão cujos pilares o autor apresenta a partir da teologia reformada e cujos princípios ele mostra, pela exposição de Daniel, que vêm da Escritura."
+     },
+     {
+      "t": "Tríade",
+      "d": "Na Parte 2 do livro, o conjunto de três capítulos: um sobre Daniel, um teológico e um de aplicação."
+     }
+    ],
+    "verses": [],
+    "questions": [
+     "Quais são os três interesses que o autor reúne no livro?",
+     "Por que o autor começa pela exposição de Daniel e não pela filosofia?",
+     "Que regra orienta os capítulos de aplicação nas tríades?"
+    ],
+    "answers": [
+     "Exposição bíblica, teologia sistemática e aplicação.",
+     "Para mostrar que os princípios da cosmovisão reformada vêm da Escritura.",
+     "Cada capítulo de aplicação usa só o que foi ensinado até ali; por exemplo, o de arte usa criação e queda, e o de missão usa redenção e consumação."
+    ]
+   },
+   {
+    "n": 2,
+    "part": 1,
+    "title": "O que é cosmovisão?",
+    "idea": "Pessoas veem o mundo de formas diferentes, e essa maneira de ver é ao mesmo tempo pessoal e formada por círculos coletivos.",
+    "lesson": [
+     "O primeiro capítulo parte de experiências transculturais, que revelam que as pessoas veem o mundo de formas diferentes.",
+     "Os exemplos do autor: alunos sul-coreanos ficavam calados em sala, o que era sinal de respeito, e não de desinteresse. Jovens americanos iam ao culto de chinelo, o que era uma celebração da primavera, e não desleixo. O gesto observado era o mesmo; o significado é que mudava.",
+     "Essas diferenças não existem só entre culturas. Elas existem também entre vizinhos e familiares.",
+     "Por isso o capítulo destaca duas dimensões da cosmovisão. Na dimensão privada, cada pessoa tem a sua cosmovisão. Na dimensão pública, ela é formada por círculos coletivos: família, comunidade, nação e século."
+    ],
+    "points": [
+     "Experiências transculturais revelam que as pessoas veem o mundo de formas diferentes.",
+     "O silêncio dos alunos sul-coreanos era respeito, não desinteresse.",
+     "O chinelo dos jovens americanos no culto celebrava a primavera, não era desleixo.",
+     "Diferenças de cosmovisão existem também entre vizinhos e familiares.",
+     "A cosmovisão tem uma dimensão privada e uma dimensão pública, formada por família, comunidade, nação e século."
+    ],
+    "terms": [
+     {
+      "t": "Cosmovisão",
+      "d": "A maneira como vemos o mundo; nas palavras do capítulo 2, a lente pela qual lemos o mundo."
+     },
+     {
+      "t": "Círculos coletivos",
+      "d": "O que forma a dimensão pública da cosmovisão: família, comunidade, nação e século."
+     }
+    ],
+    "verses": [],
+    "questions": [
+     "Que exemplos transculturais o autor usa para introduzir o conceito de cosmovisão?",
+     "As diferenças de cosmovisão existem apenas entre culturas?",
+     "Quais são as duas dimensões da cosmovisão destacadas no capítulo?"
+    ],
+    "answers": [
+     "Alunos sul-coreanos calados em sala, por respeito, e jovens americanos de chinelo no culto, celebrando a primavera.",
+     "Não. Elas existem também entre vizinhos e familiares.",
+     "A dimensão privada, pois cada pessoa tem sua cosmovisão, e a pública, pois somos formados por círculos coletivos: família, comunidade, nação e século."
+    ]
+   },
+   {
+    "n": 3,
+    "part": 1,
+    "title": "Dissecando definições: os seis elementos",
+    "idea": "Boas definições de cosmovisão reúnem seis elementos: ela é constitutiva, fundamental, pré-científica, interpretativa, normativa e aprendiz.",
+    "lesson": [
+     "No segundo capítulo, o autor examina as boas definições de cosmovisão e identifica seis elementos presentes nelas.",
+     "O primeiro é o constitutivo. Todo ser humano tem uma cosmovisão; ela faz parte da nossa constituição, como óculos que não podemos tirar. Ela é universal e compartilhada, mesmo que as pessoas não tenham consciência dela.",
+     "O segundo é o fundamental: a cosmovisão reúne as pressuposições mais básicas sobre a realidade. O terceiro é o pré-científico: ela vem antes da reflexão teórica.",
+     "O quarto é o interpretativo: a cosmovisão é a lente pela qual lemos o mundo. O quinto é o normativo: ela orienta valores e conduta.",
+     "O sexto é o aprendiz: a cosmovisão está em formação e pode ser corrigida. Para revisar, guarde a sequência: constitutiva, fundamental, pré-científica, interpretativa, normativa e aprendiz."
+    ],
+    "points": [
+     "Todo ser humano tem uma cosmovisão, como óculos que não pode tirar.",
+     "A cosmovisão reúne as pressuposições mais básicas sobre a realidade.",
+     "Ela vem antes da reflexão teórica.",
+     "Ela é a lente pela qual lemos o mundo e orienta valores e conduta.",
+     "Ela está em formação e pode ser corrigida."
+    ],
+    "terms": [
+     {
+      "t": "Constitutivo",
+      "d": "A cosmovisão faz parte da constituição de todo ser humano; é universal e compartilhada, mesmo sem consciência dela."
+     },
+     {
+      "t": "Pré-científico",
+      "d": "A cosmovisão vem antes da reflexão teórica."
+     },
+     {
+      "t": "Normativo",
+      "d": "A cosmovisão orienta valores e conduta."
+     },
+     {
+      "t": "Aprendiz",
+      "d": "A cosmovisão está em formação e pode ser corrigida."
+     }
+    ],
+    "verses": [],
+    "questions": [
+     "Quais são os seis elementos das boas definições de cosmovisão?",
+     "Que imagem o autor usa para explicar o elemento constitutivo?",
+     "O que significa dizer que a cosmovisão é pré-científica?"
+    ],
+    "answers": [
+     "Constitutivo, fundamental, pré-científico, interpretativo, normativo e aprendiz.",
+     "A de óculos que não podemos tirar.",
+     "Que ela vem antes da reflexão teórica."
+    ]
+   },
+   {
+    "n": 4,
+    "part": 1,
+    "title": "Mudanças de cosmovisão",
+    "idea": "Cosmovisões não são estáticas: a conversão é a grande mudança, mas o cristão continua se “convertendo” ao longo da vida.",
+    "lesson": [
+     "O terceiro capítulo mostra que cosmovisões não são estáticas.",
+     "A grande mudança é a conversão. Mas o cristão continua se “convertendo” ao longo da vida, e o autor cita Lucas 22.32 e Apocalipse 2 e 3.",
+     "Há também divergências reais entre cristãos: sobre milagres e providência, o livre-arbítrio, a extensão da queda, a graça comum, a prosperidade, o divórcio, o papel da mulher, a disciplina dos filhos e a relação com a cultura. Para o autor, isso mostra que a cosmovisão cristã também precisa amadurecer.",
+     "Com isso termina a Parte 1. Na Parte 2, o autor passa aos fundamentos da cosmovisão reformada, a partir das exposições de Daniel."
+    ],
+    "points": [
+     "Cosmovisões não são estáticas.",
+     "A conversão é a grande mudança de cosmovisão.",
+     "O cristão continua se “convertendo” ao longo da vida (Lc 22.32; Ap 2 e 3).",
+     "Há divergências reais entre cristãos sobre temas como providência, livre-arbítrio, graça comum, divórcio e relação com a cultura.",
+     "Essas divergências mostram que a cosmovisão cristã também precisa amadurecer."
+    ],
+    "terms": [
+     {
+      "t": "Conversão",
+      "d": "A grande mudança de cosmovisão; segundo o autor, o cristão continua se “convertendo” ao longo da vida."
+     }
+    ],
+    "verses": [
+     "Lc 22.32",
+     "Ap 2–3"
+    ],
+    "questions": [
+     "Qual é a grande mudança de cosmovisão, segundo o autor?",
+     "Que textos bíblicos o autor cita para mostrar que o cristão continua se “convertendo”?",
+     "O que as divergências entre cristãos revelam sobre a cosmovisão cristã?"
+    ],
+    "answers": [
+     "A conversão.",
+     "Lucas 22.32 e Apocalipse 2 e 3.",
+     "Que a cosmovisão cristã também precisa amadurecer."
+    ]
+   },
+   {
+    "n": 5,
+    "part": 2,
+    "title": "Daniel 1 e a dicotomia moderna",
+    "idea": "Daniel e seus amigos foram doutrinados numa cultura pagã sem se contaminar, e o capítulo teológico combate a divisão entre “sagrado” e “secular”.",
+    "lesson": [
+     "A primeira tríade começa em Daniel 1, no capítulo Deus honra os que não se contaminam. Daniel e seus amigos foram doutrinados numa cultura pagã sem se contaminar. A lição: é possível servir na esfera pública sem se amoldar ao paganismo. O capítulo também introduz o conceito de estrutura e direção, desenvolvido no pilar da Criação.",
+     "O capítulo teológico trata da dicotomia moderna: dividir a vida entre “sagrado” e “secular”, um erro muito difundido entre evangélicos. O autor distingue trabalhar neste mundo de trabalhar sob a influência do príncipe deste mundo. O primeiro é um dever.",
+     "O dualismo tem consequências. A igreja é vista como uma instituição que precisa se “tornar relevante” para as outras, em vez de os cristãos viverem o evangelho em cada papel social (família, escola, Estado). O trabalho pastoral é visto como superior às outras profissões. A fé no trabalho se reduz a honestidade e evangelismo no escritório, sem pensar em como a fé transforma o próprio trabalho.",
+     "A cultura é vista ou como “pacote demoníaco” ou como neutra. Para o autor, ambos estão errados: a cultura é o desenvolvimento da criação feito por pessoas cujo coração é sempre religioso. Por fim, os cristãos se tornam seguidores da cultura, e não formadores dela, e a fé fica privatizada.",
+     "A ironia, segundo o autor: quem aceita o dualismo acaba se tornando mundano na sua cosmovisão. A tríade se completa com o capítulo de aplicação Cosmovisão e ciência, que, como os demais, usa o que foi ensinado até ali."
+    ],
+    "points": [
+     "Daniel e seus amigos foram doutrinados numa cultura pagã sem se contaminar.",
+     "É possível servir na esfera pública sem se amoldar ao paganismo.",
+     "Dividir a vida entre sagrado e secular é um erro muito difundido entre evangélicos.",
+     "Trabalhar neste mundo é dever; trabalhar sob a influência do príncipe deste mundo é outra coisa.",
+     "A cultura não é pacote demoníaco nem neutra: é o desenvolvimento da criação por pessoas cujo coração é sempre religioso.",
+     "Ironia: quem aceita o dualismo acaba mundano na sua cosmovisão."
+    ],
+    "terms": [
+     {
+      "t": "Dicotomia moderna",
+      "d": "Divisão da vida entre “sagrado” e “secular”."
+     },
+     {
+      "t": "Dualismo",
+      "d": "A aceitação dessa divisão; entre suas consequências, os cristãos seguem a cultura em vez de formá-la e a fé fica privatizada."
+     },
+     {
+      "t": "Cultura",
+      "d": "O desenvolvimento da criação feito por pessoas cujo coração é sempre religioso."
+     }
+    ],
+    "verses": [
+     "Dn 1"
+    ],
+    "questions": [
+     "Que lição o autor tira de Daniel 1?",
+     "Cite duas consequências do dualismo sagrado/secular apontadas pelo autor.",
+     "Qual é a ironia de quem aceita o dualismo?"
+    ],
+    "answers": [
+     "Que Daniel e seus amigos foram doutrinados numa cultura pagã sem se contaminar, e que é possível servir na esfera pública sem se amoldar ao paganismo.",
+     "Por exemplo: o trabalho pastoral é visto como superior às outras profissões, e a fé no trabalho se reduz a honestidade e evangelismo no escritório. Também: a igreja precisa “se tornar relevante”, os cristãos seguem a cultura em vez de formá-la e a fé fica privatizada.",
+     "Acaba se tornando mundano na sua cosmovisão."
+    ]
+   },
+   {
+    "n": 6,
+    "part": 2,
+    "title": "Daniel 2 e o pilar da Criação",
+    "idea": "O reino de Deus é de outra natureza, e a criação, com sua estrutura boa, fundamenta ciência, comércio, arte, política e educação.",
+    "lesson": [
+     "A segunda tríade começa em Daniel 2, no capítulo Um reino de outra natureza: o reino de Deus é de outra natureza, maior que todos os impérios humanos.",
+     "No capítulo teológico, o autor explica por que sua cosmovisão é “reformada”. Historicamente, o luteranismo concentrou-se na igreja e os anabatistas se isolaram da cultura, enquanto a tradição reformada, desde Calvino, sempre se engajou em todas as esferas da sociedade. Ela não separa a ação de Deus na história (a providência) da ação no coração (a salvação).",
+     "A cosmovisão reformada tem diferenciais. Ela é integracionista ou holística, e não dualista: ajuda a decidir questões práticas, como ouvir música “secular”, levando em conta não só o que é pecado, mas a providência, o amor ao próximo e a prudência, como Paulo faz sobre a carne sacrificada a ídolos. E ela é histórica, e não só proposicional: é expressa numa história de quatro grandes atos, criação, queda, redenção e consumação. Essa história é objetiva, com eventos fora de nós (extra nos), e subjetiva, com estágios da nossa vida pessoal (intra nos). A criação me dá propósito; a queda me dá moderação nos sonhos; a redenção renova minha esperança.",
+     "A Bíblia não é livro de química ou astronomia, mas abarca toda a realidade. A criação responde “quem sou?” e “onde estou?”; a queda, “o que está errado?”; a redenção, “qual é a solução?”. Os aspectos da criação são Deus como Criador, a providência (Deus sustenta tudo a cada momento, e não intervém só ocasionalmente) e o homem como imagem de Deus.",
+     "O autor desenvolve aqui o conceito de estrutura e direção, com Wolters e os herdeiros de Dooyeweerd. Estrutura é o potencial cultural e as leis que Deus ordenou; direção é como o ser humano usa essa estrutura. Ciência, comércio, arte, política e educação estão fundamentadas na criação e são boas em si. O capítulo de aplicação desta tríade é Cosmovisão e política, que usa os pilares já estudados."
+    ],
+    "points": [
+     "O reino de Deus é de outra natureza, maior que todos os impérios humanos.",
+     "A tradição reformada, desde Calvino, engaja-se em todas as esferas da sociedade.",
+     "A cosmovisão reformada é integracionista e histórica, expressa em quatro atos.",
+     "Essa história é objetiva (extra nos) e subjetiva (intra nos).",
+     "A criação envolve Deus como Criador, a providência e o homem como imagem de Deus.",
+     "Estrutura é o que Deus ordenou; direção é como o ser humano a usa."
+    ],
+    "terms": [
+     {
+      "t": "Estrutura",
+      "d": "O potencial cultural e as leis que Deus ordenou; é boa, criada."
+     },
+     {
+      "t": "Direção",
+      "d": "O modo como o ser humano usa a estrutura criada; pode ser idólatra."
+     },
+     {
+      "t": "Providência",
+      "d": "Deus sustenta todas as coisas a cada momento, e não intervém só ocasionalmente."
+     },
+     {
+      "t": "Extra nos / intra nos",
+      "d": "“Fora de nós” e “dentro de nós”: a história de quatro atos como eventos objetivos e como estágios da vida pessoal."
+     }
+    ],
+    "verses": [
+     "Dn 2"
+    ],
+    "questions": [
+     "Por que o autor chama sua cosmovisão de “reformada”?",
+     "Quais perguntas a criação responde?",
+     "Qual a diferença entre estrutura e direção?"
+    ],
+    "answers": [
+     "Porque, enquanto o luteranismo se concentrou na igreja e os anabatistas se isolaram da cultura, a tradição reformada, desde Calvino, sempre se engajou em todas as esferas da sociedade, sem separar providência e salvação.",
+     "“Quem sou?” e “onde estou?”.",
+     "Estrutura é o potencial cultural e as leis que Deus ordenou; direção é como o ser humano usa essa estrutura."
+    ]
+   },
+   {
+    "n": 7,
+    "part": 2,
+    "title": "Daniel 3 e o pilar da Queda",
+    "idea": "A queda atinge toda a vida, mas o problema não está na estrutura criada, e sim na direção.",
+    "lesson": [
+     "A terceira tríade começa em Daniel 3, a fornalha ardente, no capítulo Para vencer o mundanismo. O tema é como vencer o mundanismo e a idolatria das múltiplas lealdades.",
+     "O capítulo teológico apresenta o pilar da Queda. O pecado não é só o que fazemos, mas o que nos leva a fazer: o pecado original. Ele afeta nossos melhores atos (Is 64.6) e todo o nosso habitat, físico e moral. Citando R. C. Sproul, o autor observa que a teologia reformada leva o pecado a sério justamente porque tem uma visão elevada de Deus e do ser humano.",
+     "A queda tem profundidade e abrangência: não atinge só parte da vida. A depravação “total” não significa que somos tão maus quanto poderíamos ser, mas que nenhuma área está livre do pecado.",
+     "O mal está entremeado nas coisas boas. O exemplo do autor é o esporte: é bom, mas pode ser distorcido por ganância e idolatria. Não se deve rotular a estrutura como má; o problema está na direção. O capítulo também trata do pecado como pessoal e “parasita” e de concepções erradas sobre o pecado.",
+     "O capítulo de aplicação desta tríade é O cristão e a arte, que usa criação e queda, os pilares estudados até ali."
+    ],
+    "points": [
+     "Daniel 3 trata de como vencer o mundanismo e a idolatria das múltiplas lealdades.",
+     "O pecado é o que fazemos e o que nos leva a fazer (pecado original).",
+     "O pecado afeta nossos melhores atos e todo o nosso habitat, físico e moral.",
+     "Depravação total significa que nenhuma área está livre do pecado, não que somos tão maus quanto poderíamos ser.",
+     "O mal está entremeado nas coisas boas: a estrutura é boa; o problema está na direção."
+    ],
+    "terms": [
+     {
+      "t": "Pecado original",
+      "d": "O pecado como aquilo que nos leva a fazer, e não só o que fazemos."
+     },
+     {
+      "t": "Depravação total",
+      "d": "Nenhuma área está livre do pecado; não significa que somos tão maus quanto poderíamos ser."
+     }
+    ],
+    "verses": [
+     "Dn 3",
+     "Is 64.6"
+    ],
+    "questions": [
+     "Que tema o autor tira do episódio da fornalha ardente?",
+     "O que significa “depravação total”?",
+     "Como o exemplo do esporte ilustra a relação entre estrutura e direção?"
+    ],
+    "answers": [
+     "Como vencer o mundanismo e a idolatria das múltiplas lealdades.",
+     "Não que somos tão maus quanto poderíamos ser, mas que nenhuma área está livre do pecado.",
+     "O esporte é bom, mas pode ser distorcido por ganância e idolatria; o problema está na direção, não na estrutura."
+    ]
+   },
+   {
+    "n": 8,
+    "part": 2,
+    "title": "Daniel 4 e o pilar da Redenção",
+    "idea": "Todos buscam redenção, mas só a revelação especial apresenta o Deus redentor.",
+    "lesson": [
+     "A quarta tríade começa em Daniel 4, no capítulo A grandeza de Deus para os humilhados: a humilhação de Nabucodonosor mostra a grandeza de Deus.",
+     "O capítulo teológico apresenta o pilar da Redenção, a partir de uma observação: todos buscam redenção. Mesmo quem não usa essas palavras pensa em ideal (criação), realidade (queda) e solução (redenção).",
+     "Cada religião e cosmovisão oferece um tipo de redenção: o nirvana, as boas obras, o paraíso. A publicidade promete conforto e segurança; o cinema gira em torno de enredos redentores; o marxismo e o neomarxismo propõem a revolução social.",
+     "Para o autor, a redenção é a área em que os incrédulos mais se distanciam da verdade, porque só a revelação especial, a Bíblia, apresenta o Deus redentor. O capítulo de aplicação desta tríade é Cosmovisão e educação, que usa os pilares já estudados."
+    ],
+    "points": [
+     "A humilhação de Nabucodonosor mostra a grandeza de Deus.",
+     "Todos pensam em ideal (criação), realidade (queda) e solução (redenção).",
+     "Religiões e cosmovisões oferecem redenções: nirvana, boas obras, paraíso.",
+     "Publicidade, cinema, marxismo e neomarxismo também prometem algum tipo de redenção.",
+     "Só a revelação especial apresenta o Deus redentor."
+    ],
+    "terms": [
+     {
+      "t": "Revelação especial",
+      "d": "A Bíblia, a única que apresenta o Deus redentor."
+     },
+     {
+      "t": "Redenção",
+      "d": "A resposta à pergunta “qual é a solução?”; o terceiro dos quatro atos da história bíblica."
+     }
+    ],
+    "verses": [
+     "Dn 4"
+    ],
+    "questions": [
+     "O que a humilhação de Nabucodonosor mostra, segundo o autor?",
+     "Como até quem não usa a linguagem cristã pensa em criação, queda e redenção?",
+     "Por que a redenção é a área em que os incrédulos mais se distanciam da verdade?"
+    ],
+    "answers": [
+     "A grandeza de Deus.",
+     "Pensando em ideal (criação), realidade (queda) e solução (redenção).",
+     "Porque só a revelação especial, a Bíblia, apresenta o Deus redentor."
+    ]
+   },
+   {
+    "n": 9,
+    "part": 2,
+    "title": "Daniel 5 e as cosmovisões comparadas",
+    "idea": "A festa de Belsazar contrasta a vida vista “debaixo do sol” com a vida vista à luz do Eterno; o capítulo teológico compara tipologias de cosmovisão.",
+    "lesson": [
+     "A quinta tríade começa em Daniel 5, no capítulo Olhos no eterno. Da festa de Belsazar, o autor tira o contraste entre olhar a vida “debaixo do sol” e olhá-la à luz do Eterno.",
+     "O capítulo teológico apresenta cosmovisões comparadas. O autor expõe tipologias de cosmovisão, principalmente a de James Sire, em O Universo ao Lado, com sete perguntas: o que é a realidade primordial; qual a natureza da realidade externa; o que é o ser humano; o que acontece na morte; por que é possível conhecer; como saber o que é certo e errado; e qual o significado da história.",
+     "O autor cita ainda duas classificações. Kuyper falava em paganismo, romanismo, modernismo e calvinismo. Geisler e Bocchino listam teísmo, ateísmo, panteísmo, panenteísmo, deísmo, politeísmo e deísmo limitado. O capítulo de aplicação desta tríade é Cosmovisão e ética, que usa os pilares já estudados."
+    ],
+    "points": [
+     "A festa de Belsazar contrasta a vida “debaixo do sol” com a vida à luz do Eterno.",
+     "James Sire, em O Universo ao Lado, propõe sete perguntas sobre cosmovisão.",
+     "As perguntas tratam de realidade, ser humano, morte, conhecimento, certo e errado, e história.",
+     "Kuyper classificou as cosmovisões em paganismo, romanismo, modernismo e calvinismo.",
+     "Geisler e Bocchino listam teísmo, ateísmo, panteísmo, panenteísmo, deísmo, politeísmo e deísmo limitado."
+    ],
+    "terms": [
+     {
+      "t": "Debaixo do sol",
+      "d": "Modo de olhar a vida que o autor contrasta com olhá-la à luz do Eterno, a partir da festa de Belsazar."
+     },
+     {
+      "t": "Tipologia de cosmovisão",
+      "d": "Classificação das cosmovisões, como as de Sire, Kuyper e Geisler/Bocchino."
+     }
+    ],
+    "verses": [
+     "Dn 5"
+    ],
+    "questions": [
+     "Que contraste o autor tira da festa de Belsazar?",
+     "Cite três das sete perguntas de James Sire.",
+     "Quais as quatro categorias da classificação de Kuyper?"
+    ],
+    "answers": [
+     "O contraste entre olhar a vida “debaixo do sol” e olhá-la à luz do Eterno.",
+     "Quaisquer três entre: o que é a realidade primordial; a natureza da realidade externa; o que é o ser humano; o que acontece na morte; por que é possível conhecer; como saber o que é certo e errado; qual o significado da história.",
+     "Paganismo, romanismo, modernismo e calvinismo."
+    ]
+   },
+   {
+    "n": 10,
+    "part": 2,
+    "title": "Daniel 6 e a cultura evangélica brasileira",
+    "idea": "Deus nos protege do maligno, e amar a Deus no mundo exige refletir sobre nossa relação com a cultura, inclusive a evangélica brasileira.",
+    "lesson": [
+     "A sexta tríade começa em Daniel 6, Daniel na cova dos leões. O título do capítulo resume a lição: Deus nos protege do maligno.",
+     "O capítulo teológico trata de cosmovisão e a cultura evangélica brasileira. Ele discute o que é cultura, termo com centenas de definições, e o dilema da definição.",
+     "O autor distingue: se criação é o que Deus faz, cultura é o que nós fazemos com a criação. Amar a Deus no mundo exige refletir sobre nossa relação com a cultura, inclusive a cultura evangélica brasileira. O capítulo de aplicação desta tríade é Cosmovisão e trabalho, que usa os pilares já estudados."
+    ],
+    "points": [
+     "Daniel 6 mostra que Deus nos protege do maligno.",
+     "Há centenas de definições de cultura, o que gera um dilema de definição.",
+     "Criação é o que Deus faz; cultura é o que nós fazemos com a criação.",
+     "Amar a Deus no mundo exige refletir sobre nossa relação com a cultura.",
+     "Essa reflexão inclui a cultura evangélica brasileira."
+    ],
+    "terms": [
+     {
+      "t": "Cultura",
+      "d": "O que nós fazemos com a criação, assim como criação é o que Deus faz."
+     }
+    ],
+    "verses": [
+     "Dn 6"
+    ],
+    "questions": [
+     "Qual é a lição de Daniel 6 segundo o título do capítulo do autor?",
+     "Que distinção o autor faz entre criação e cultura?",
+     "Por que a cultura evangélica brasileira também entra na reflexão?"
+    ],
+    "answers": [
+     "Deus nos protege do maligno.",
+     "Criação é o que Deus faz; cultura é o que nós fazemos com a criação.",
+     "Porque amar a Deus no mundo exige refletir sobre nossa relação com a cultura, inclusive a cultura evangélica brasileira."
+    ]
+   },
+   {
+    "n": 11,
+    "part": 2,
+    "title": "Daniel 7 a 12 e o pilar da Consumação",
+    "idea": "A história termina com a segunda vinda de Cristo, que elimina o mal, e esse quarto pilar corrige tendências gregas no pensamento evangélico.",
+    "lesson": [
+     "A última tríade começa em Daniel 7 a 12, no capítulo Vislumbres do fim, que trata das visões do fim.",
+     "O capítulo teológico apresenta o pilar da Consumação, o último ato da história: a segunda vinda de Cristo elimina o mal em nós e ao nosso redor, e o paraíso reconquistado não poderá mais ser perdido.",
+     "Muitos livros falam só da tríade criação, queda e redenção. O autor insiste no quarto pilar porque ele corrige tendências gregas no pensamento evangélico, como falar de “almas” salvas em vez de vidas, ou de uma salvação sem corpo. Nosso destino são novos céus e nova terra.",
+     "O capítulo de aplicação desta tríade é Cosmovisão e missão, que usa redenção e consumação. Para revisar as ideias-chave do livro: todo mundo tem cosmovisão; o grande inimigo é o dualismo sagrado/secular; a estrutura é boa, criada, e a direção pode ser idólatra; os quatro pilares (criação, queda, redenção e consumação) são vividos de forma objetiva e pessoal; e Daniel é o modelo de quem serve na Babilônia sem se contaminar."
+    ],
+    "points": [
+     "Daniel 7 a 12 traz visões do fim.",
+     "A consumação é o último ato: a segunda vinda de Cristo elimina o mal em nós e ao nosso redor.",
+     "O paraíso reconquistado não poderá mais ser perdido.",
+     "Muitos livros param na tríade criação, queda e redenção; o autor insiste no quarto pilar.",
+     "A consumação corrige tendências gregas, como falar de “almas” salvas ou de salvação sem corpo.",
+     "Nosso destino são novos céus e nova terra."
+    ],
+    "terms": [
+     {
+      "t": "Consumação",
+      "d": "O último ato da história: a segunda vinda de Cristo elimina o mal em nós e ao nosso redor, e o paraíso reconquistado não poderá mais ser perdido."
+     },
+     {
+      "t": "Tendências gregas",
+      "d": "No pensamento evangélico, falar de “almas” salvas em vez de vidas, ou de uma salvação sem corpo."
+     }
+    ],
+    "verses": [
+     "Dn 7–12"
+    ],
+    "questions": [
+     "O que acontece no último ato da história, segundo o pilar da Consumação?",
+     "Por que o autor insiste em um quarto pilar além da tríade criação, queda e redenção?",
+     "Qual é o nosso destino, segundo o autor?"
+    ],
+    "answers": [
+     "A segunda vinda de Cristo elimina o mal em nós e ao nosso redor, e o paraíso reconquistado não poderá mais ser perdido.",
+     "Porque ele corrige tendências gregas no pensamento evangélico, como falar de “almas” salvas em vez de vidas, ou de uma salvação sem corpo.",
+     "Novos céus e nova terra."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "inteligencia-humilhada",
+  "title": "Inteligência Humilhada",
+  "subtitle": "",
+  "author": "Jonas Madureira",
+  "colors": [
+   "#2f2f4a",
+   "#1c1c30"
+  ],
+  "desc": "Jonas Madureira propõe uma “inteligência humilhada”: nem fideísmo nem racionalismo, mas uma razão que ora e uma fé que pensa. Apoiado sobretudo no livro X das Confissões de Agostinho, o autor trata do conhecimento de Deus depois da queda, do Deus que se esvazia em Cristo, do problema do mal, da antropologia bíblica e das tentações do teólogo.",
+  "parts": [
+   {
+    "n": 1,
+    "title": "A teologia diante de Deus"
+   },
+   {
+    "n": 2,
+    "title": "O conhecimento na desgraça"
+   },
+   {
+    "n": 3,
+    "title": "O Deus humilhado"
+   },
+   {
+    "n": 4,
+    "title": "A teologia do autoconhecimento"
+   },
+   {
+    "n": 5,
+    "title": "A traição dos teólogos"
+   }
+  ],
+  "chapters": [
+   {
+    "n": 1,
+    "part": null,
+    "title": "Introdução: como sabemos que Deus existe?",
+    "idea": "O livro parte de uma pergunta aparentemente simples e quer que uns encontrem dúvidas por trás das certezas e outros encontrem certezas por trás das dúvidas.",
+    "lesson": [
+     "O conceito de “inteligência humilhada” nasceu de uma palestra que Jonas Madureira deu em 2010, baseada no livro X das Confissões de Agostinho. A ideia foi sendo amadurecida em cursos até ganhar a forma de livro.",
+     "O autor escreve ao mesmo tempo como pastor e como professor. Ele tem um desejo declarado: que os teólogos voltem para a igreja local.",
+     "A pergunta que abre a introdução é direta: “Como sabemos que Deus existe?”. O livro se dirige a dois públicos. De um lado, estão aqueles que acham essa pergunta simples demais. De outro, estão aqueles que pensam que a existência de Deus é só uma questão de fé.",
+     "O objetivo do autor é provocar os dois grupos em direções opostas. Ao primeiro, ele quer mostrar que há dúvidas por trás das certezas. Ao segundo, quer mostrar que há certezas por trás das dúvidas.",
+     "O caminho do livro passa por cinco capítulos: a teologia diante de Deus, o conhecimento na desgraça, o Deus humilhado, a teologia do autoconhecimento e a traição dos teólogos. Ao final, há uma conclusão escrita em forma de oração. Nas próximas aulas, seguiremos essa ordem."
+    ],
+    "points": [
+     "O conceito nasceu de uma palestra de 2010 sobre o livro X das Confissões de Agostinho.",
+     "O autor escreve como pastor e professor e deseja que os teólogos voltem para a igreja local.",
+     "A pergunta da introdução é: “Como sabemos que Deus existe?”.",
+     "O livro fala a quem acha a pergunta simples demais e a quem pensa que tudo é só questão de fé.",
+     "O objetivo é revelar dúvidas por trás das certezas e certezas por trás das dúvidas."
+    ],
+    "terms": [],
+    "verses": [],
+    "questions": [
+     "Qual foi a origem do conceito de “inteligência humilhada”?",
+     "A quais dois públicos o livro se dirige?",
+     "O que o autor deseja provocar em cada um desses públicos?"
+    ],
+    "answers": [
+     "Uma palestra de 2010 baseada no livro X das Confissões de Agostinho, amadurecida depois em cursos até virar livro.",
+     "A quem acha a pergunta sobre a existência de Deus simples demais e a quem pensa que a existência de Deus é apenas questão de fé.",
+     "Que os primeiros encontrem dúvidas por trás de suas certezas e os segundos encontrem certezas por trás de suas dúvidas."
+    ]
+   },
+   {
+    "n": 2,
+    "part": 1,
+    "title": "Nem balão nem toupeira: a razão que dobra os joelhos",
+    "idea": "A inteligência humilhada rejeita tanto o fideísmo quanto o racionalismo: é uma fé que não tem medo de pensar e uma razão que reconhece sua dependência da revelação.",
+    "lesson": [
+     "O primeiro capítulo começa diante de uma alternativa: fideísmo ou racionalismo? A resposta do autor é: nenhum dos dois. O fideísmo nega qualquer argumento racional como base para o conhecimento de Deus; tudo dependeria de um “salto de fé”. Nele, a razão é sacrificada em favor da fé. O racionalismo faz o movimento inverso: só a razão seria fonte de conhecimento verdadeiro, e a fé seria algo subjetivo. Aqui, é a fé que se sacrifica em favor da razão.",
+     "A inteligência humilhada não é a morte da fé nem a morte da razão. É a fé que não tem medo de pensar e a razão que reconhece sua dependência da revelação. Uma frase resume a proposta: a razão não precisa morrer, só precisa dobrar os joelhos.",
+     "Daí vem outro ponto: a gratidão vem antes da piedade. Não é a razão que torna o teólogo piedoso, mas a gratidão pela dádiva da revelação. Nessa mesma linha, o autor afirma que a oração é a forma mais profunda de pensamento humano.",
+     "Para tornar a ideia visível, Madureira recorre a uma imagem de Chesterton. O fideísta é como um balão que sobe ao céu. O racionalista é como uma toupeira, que só cava a terra. A inteligência humilhada é como uma árvore: tem raízes na terra e ramos que sobem até as estrelas.",
+     "Por fim, usando a imagem de “anões sobre os ombros de gigantes”, de Bernardo de Chartres, o autor apoia o conceito em cinco gigantes: Agostinho, Anselmo, Calvino, Pascal e Dooyeweerd. Entre eles, Agostinho é o principal, especialmente o livro X das Confissões."
+    ],
+    "points": [
+     "O fideísmo sacrifica a razão em favor da fé; o racionalismo sacrifica a fé em favor da razão.",
+     "A inteligência humilhada é uma fé que pensa e uma razão que depende da revelação.",
+     "A razão não precisa morrer, só precisa dobrar os joelhos.",
+     "A gratidão pela revelação, e não a razão, torna o teólogo piedoso; a oração é a forma mais profunda de pensamento.",
+     "Na imagem de Chesterton, o fideísta é um balão, o racionalista é uma toupeira e a inteligência humilhada é uma árvore.",
+     "Os cinco gigantes são Agostinho, Anselmo, Calvino, Pascal e Dooyeweerd, com destaque para Agostinho."
+    ],
+    "terms": [
+     {
+      "t": "Fideísmo",
+      "d": "Posição que nega qualquer argumento racional como base para o conhecimento de Deus e faz tudo depender de um “salto de fé”."
+     },
+     {
+      "t": "Racionalismo",
+      "d": "Posição segundo a qual só a razão é fonte de conhecimento verdadeiro, e a fé é algo subjetivo."
+     },
+     {
+      "t": "Inteligência humilhada",
+      "d": "Uma fé que não tem medo de pensar e uma razão que reconhece sua dependência da revelação."
+     }
+    ],
+    "verses": [],
+    "questions": [
+     "Qual é a diferença entre fideísmo e racionalismo?",
+     "Segundo o autor, o que torna o teólogo piedoso?",
+     "Como a imagem de Chesterton ilustra as três posições?"
+    ],
+    "answers": [
+     "O fideísmo sacrifica a razão em favor da fé, apoiando-se num salto de fé; o racionalismo sacrifica a fé em favor da razão, tratando a fé como algo subjetivo.",
+     "Não a razão, mas a gratidão pela dádiva da revelação.",
+     "O fideísta é como um balão que sobe ao céu, o racionalista como uma toupeira que só cava a terra, e a inteligência humilhada como uma árvore, com raízes na terra e ramos que sobem até as estrelas."
+    ]
+   },
+   {
+    "n": 3,
+    "part": 1,
+    "title": "Teologia na segunda pessoa e a humildade arrogante",
+    "idea": "O pensamento teológico só sobrevive em diálogo com Deus, e há uma arrogância disfarçada de humildade em quem pressupõe ver o todo.",
+    "lesson": [
+     "As Confissões de Agostinho foram escritas para Deus. Ele é o verdadeiro leitor do livro. Nós apenas “ouvimos” a oração, como a congregação ouve alguém que ora em voz alta. Madureira tira daí uma lição: o pensamento teológico só sobrevive em diálogo com Deus. Antes de investigar, a teologia precisa aprender a orar.",
+     "Essa é a teologia na segunda pessoa: falar com Deus antes de falar sobre Deus. O autor cita Evágrio Pôntico: “se és teólogo, orarás verdadeiramente”. Cita também Helmut Thielicke, que alerta contra pensar sobre Deus “em terceira pessoa”, tratando a Bíblia como um mero objeto técnico.",
+     "O segundo tema desta aula é a humildade arrogante. Mal conhecemos a nós mesmos, mas falamos de Deus como especialistas, e isso é arrogância. O autor lembra uma frase de Zuínglio: sabemos tanto de Deus por nós mesmos quanto um besouro sabe do homem.",
+     "Há também uma arrogância disfarçada de humildade. Para expô-la, Madureira analisa a parábola dos cegos e do elefante, usada por Rubem Alves para dizer que todas as religiões veem partes da mesma realidade. O problema é que quem conta a história finge ver o elefante inteiro. O “inclusivista” pressupõe ter uma visão mais completa que a de todos os outros. Lesslie Newbigin já havia apontado essa contradição.",
+     "O capítulo inclui ainda as seções “Conhecer-te, ó conhecedor de mim!”, “A condição da humilhação”, “Autoabsorção narcisista” e “O tolo e as sombras da caverna”."
+    ],
+    "points": [
+     "As Confissões foram escritas para Deus; os leitores apenas “ouvem” a oração.",
+     "Antes de investigar, a teologia precisa aprender a orar.",
+     "Thielicke alerta contra pensar sobre Deus “em terceira pessoa”, tratando a Bíblia como objeto técnico.",
+     "Falar de Deus como especialista, mal conhecendo a si mesmo, é arrogância.",
+     "O inclusivista da parábola do elefante pressupõe ter uma visão mais completa que a de todos."
+    ],
+    "terms": [
+     {
+      "t": "Teologia na segunda pessoa",
+      "d": "Teologia feita em diálogo com Deus, falando com Ele antes de falar sobre Ele."
+     },
+     {
+      "t": "Inclusivista",
+      "d": "Quem, como no uso que Rubem Alves faz da parábola do elefante, diz que todas as religiões veem partes da mesma realidade; segundo o autor, pressupõe ter uma visão mais completa que a de todos."
+     }
+    ],
+    "verses": [],
+    "questions": [
+     "Em que sentido as Confissões de Agostinho são uma teologia “na segunda pessoa”?",
+     "O que a frase de Zuínglio sobre o besouro quer mostrar?",
+     "Qual é a contradição presente no uso da parábola dos cegos e do elefante?"
+    ],
+    "answers": [
+     "Foram escritas para Deus, que é seu verdadeiro leitor; nós apenas ouvimos a oração. A lição é que a teologia só sobrevive em diálogo com Deus.",
+     "Que, por nós mesmos, sabemos tão pouco de Deus quanto um besouro sabe do homem.",
+     "Quem conta a história finge ver o elefante inteiro: o inclusivista pressupõe ter uma visão mais completa que a de todos os outros."
+    ]
+   },
+   {
+    "n": 4,
+    "part": 2,
+    "title": "Epistemologia monergista e o homem-flecha",
+    "idea": "Assim como a salvação, o próprio conhecimento de Deus depende da graça; a queda desviou a direção do coração humano.",
+    "lesson": [
+     "O segundo capítulo, “O conhecimento na desgraça”, começa com uma proposta: os termos monergismo e sinergismo não dizem respeito apenas à salvação, mas também à forma como pensamos, isto é, à teoria do conhecimento.",
+     "No monergismo, a salvação é obra exclusiva de Deus (soli Deo gloria); trata-se de uma relação de singularidade. No sinergismo, a salvação é uma interação entre Deus e o homem; trata-se de uma relação de mutualidade. O autor prefere esses termos a “calvinismo” e “arminianismo”, porque há monergistas que não são calvinistas, como os agostinianos e os jansenistas, e há sinergistas que não são arminianos, como os jesuítas e os molinistas.",
+     "Com isso, a tese fica clara: a inteligência humilhada é monergista. Até o conhecimento de Deus depende da graça.",
+     "Para explicar a condição humana, o autor usa a imagem do homem-flecha. O ser humano foi criado como uma flecha com um único alvo: Deus. A queda não destruiu a flecha nem mudou o alvo; desviou a direção. Agora o coração atinge qualquer coisa, menos aquilo para que foi criado.",
+     "Madureira lembra que Anselmo, no Proslogion, lamenta essa condição miserável. O capítulo traz ainda uma seção intitulada “O cúmulo da miséria”."
+    ],
+    "points": [
+     "Monergismo e sinergismo também se aplicam à teoria do conhecimento.",
+     "Monergismo é relação de singularidade; sinergismo é relação de mutualidade.",
+     "Há monergistas não calvinistas e sinergistas não arminianos, por isso o autor prefere esses termos.",
+     "Na epistemologia monergista, até o conhecimento de Deus depende da graça.",
+     "A queda não destruiu a flecha nem mudou o alvo, mas desviou sua direção."
+    ],
+    "terms": [
+     {
+      "t": "Monergismo",
+      "d": "Visão segundo a qual a salvação é obra exclusiva de Deus (soli Deo gloria); uma relação de singularidade."
+     },
+     {
+      "t": "Sinergismo",
+      "d": "Visão segundo a qual a salvação é uma interação entre Deus e o homem; uma relação de mutualidade."
+     },
+     {
+      "t": "Epistemologia monergista",
+      "d": "Aplicação do monergismo à teoria do conhecimento: até o conhecimento de Deus depende da graça."
+     }
+    ],
+    "verses": [],
+    "questions": [
+     "Por que o autor prefere “monergismo” e “sinergismo” a “calvinismo” e “arminianismo”?",
+     "O que significa dizer que a inteligência humilhada é monergista?",
+     "O que a imagem do homem-flecha ensina sobre os efeitos da queda?"
+    ],
+    "answers": [
+     "Porque há monergistas que não são calvinistas, como agostinianos e jansenistas, e sinergistas que não são arminianos, como jesuítas e molinistas.",
+     "Que até o conhecimento de Deus depende da graça.",
+     "Que a queda não destruiu a flecha nem mudou o alvo, mas desviou a direção, de modo que o coração atinge qualquer coisa, menos aquilo para que foi criado."
+    ]
+   },
+   {
+    "n": 5,
+    "part": 2,
+    "title": "O chocolate e a pegada: o que a criação revela",
+    "idea": "A criação mostra que Deus existe, mas só Cristo mostra quem Deus é.",
+    "lesson": [
+     "A queda afetou também o intelecto. É o que se chama de efeitos noéticos da queda; a palavra “noético” vem de nous, mente. Por isso, não podemos chegar a Deus apenas pelo raciocínio. Seguindo Cornelius Van Til, o autor afirma que não se deve olhar a criação como se ela fosse independente: só quem olha a natureza pelo “espelho” da Escritura a entende corretamente.",
+     "Madureira usa uma ilustração, o “crime do chocolate”. Uma criança com o rosto sujo de chocolate não precisa confessar: os vestígios mostram o “crime”. A revelação natural funciona assim. A criação são os vestígios de Deus, e basta olhar para saber que o mundo foi criado.",
+     "Na seção “O casaco de Pascal”, o autor recorre a Agostinho, que interroga a terra, o mar e o céu. Todos respondem: “não somos o teu Deus; Ele nos fez”. Mas a natureza mostra que Deus existe, e não quem Ele é. Assim como uma pegada não revela a pessoa, a criação não revela Deus de modo suficiente.",
+     "Por isso é necessária a revelação especial: Cristo, a imagem do Deus invisível (Hb 1.3; Cl 1.15). O autor cita Lutero, para quem Deus só quer ser conhecido por meio de Cristo. Sem graça, o conhecimento natural de Deus produz falsos deuses. O exemplo é o Deus de Aristóteles, o “Primeiro Motor”, diante do qual, como observou Heidegger, ninguém ora, chora ou se ajoelha.",
+     "O capítulo inclui também a seção “Livres-pensadores ou gnósticos enrustidos?”."
+    ],
+    "points": [
+     "A queda também afetou o intelecto, por isso o raciocínio sozinho não leva a Deus.",
+     "Com Van Til, a natureza só é bem compreendida pelo “espelho” da Escritura.",
+     "Como o rosto sujo de chocolate, a criação traz os vestígios de Deus.",
+     "A natureza mostra que Deus existe, mas não quem Ele é, como uma pegada não revela a pessoa.",
+     "Cristo, imagem do Deus invisível, é a revelação especial necessária.",
+     "Sem graça, o conhecimento natural produz falsos deuses, como o “Primeiro Motor” de Aristóteles."
+    ],
+    "terms": [
+     {
+      "t": "Efeitos noéticos da queda",
+      "d": "Os efeitos da queda sobre o intelecto (de nous, mente), pelos quais não podemos chegar a Deus apenas pelo raciocínio."
+     },
+     {
+      "t": "Revelação natural",
+      "d": "O testemunho da criação, que traz os vestígios de Deus e mostra que o mundo foi criado, mas não quem Deus é."
+     },
+     {
+      "t": "Revelação especial",
+      "d": "A revelação de Deus em Cristo, a imagem do Deus invisível, necessária para conhecer quem Deus é."
+     }
+    ],
+    "verses": [
+     "Hb 1.3",
+     "Cl 1.15"
+    ],
+    "questions": [
+     "O que significa a expressão “efeitos noéticos da queda”?",
+     "O que a ilustração do “crime do chocolate” ensina sobre a revelação natural?",
+     "Por que a revelação natural não é suficiente?"
+    ],
+    "answers": [
+     "Que a queda afetou também o intelecto (nous, mente), de modo que não podemos chegar a Deus apenas pelo raciocínio.",
+     "Que, assim como os vestígios no rosto da criança revelam o “crime”, a criação traz os vestígios de Deus, e basta olhar para saber que o mundo foi criado.",
+     "Porque mostra que Deus existe, mas não quem Ele é; para isso é necessária a revelação especial em Cristo. Sem graça, o conhecimento natural produz falsos deuses."
+    ]
+   },
+   {
+    "n": 6,
+    "part": 3,
+    "title": "O Deus humilhado: poder, kénōsis e phrónēsis",
+    "idea": "O esvaziamento de Cristo é exclusivo de Deus; o que somos chamados a imitar é a sua phrónēsis, a obediência e o serviço.",
+    "lesson": [
+     "O terceiro capítulo começa pelo Credo: “Creio em Deus Pai, todo-poderoso”. Para o cristão, Deus não é Pai de um modo genérico, mas como Pai de Jesus Cristo. Isso remete à Trindade e ao amor que entregou o Filho.",
+     "Quanto à onipotência, Deus jamais seria tirano. Tirano é o homem que finge ser Deus. Por isso, a tirania é sempre uma farsa de onipotência.",
+     "Em seguida, o autor trata da kénōsis de Cristo, a partir de Filipenses 2.7, onde se diz que Ele “esvaziou-se”. Madureira dialoga com o filósofo Gianni Vattimo e seu “pensamento fraco”. Para Vattimo, a salvação seria a secularização, isto é, a dissolução do sagrado, e os cristãos deveriam imitar o esvaziamento de Cristo. Madureira mostra o erro: o esvaziamento é exclusivo de Deus. Só quem é Senhor por natureza pode se esvaziar; o homem já é “vazio” de glória.",
+     "Então, o que imitar em Cristo? A resposta está em Filipenses 2.5, com a palavra phrónēsis. Ela é traduzida como “sentimento” ou “atitude”, mas significa mais: é a combinação de atitude, consciência e vontade corretas, uma sabedoria prática, como em Aristóteles. O oposto é o “homem miserável” de Romanos 7, que sabe o bem, mas não consegue fazê-lo.",
+     "O que devemos imitar em Cristo não é o esvaziamento, exclusivo de Deus, mas a obediência e o serviço. Cristo não quis ser homem por inveja dos homens; quis ser servo."
+    ],
+    "points": [
+     "Deus é Pai como Pai de Jesus Cristo, o que remete à Trindade e ao amor que entregou o Filho.",
+     "Deus jamais seria tirano; a tirania é uma farsa de onipotência.",
+     "Contra Vattimo, o esvaziamento (kénōsis) é exclusivo de Deus.",
+     "Phrónēsis é a combinação de atitude, consciência e vontade corretas.",
+     "Imitamos em Cristo a obediência e o serviço, não o esvaziamento."
+    ],
+    "terms": [
+     {
+      "t": "Kénōsis",
+      "d": "O esvaziamento de Cristo (Fp 2.7), que só quem é Senhor por natureza pode realizar."
+     },
+     {
+      "t": "Phrónēsis",
+      "d": "Termo de Fp 2.5 traduzido como “sentimento” ou “atitude”; a combinação de atitude, consciência e vontade corretas, uma sabedoria prática."
+     },
+     {
+      "t": "Pensamento fraco",
+      "d": "Proposta de Gianni Vattimo que vê a salvação como secularização, a dissolução do sagrado."
+     }
+    ],
+    "verses": [
+     "Fp 2.5",
+     "Fp 2.7",
+     "Rm 7"
+    ],
+    "questions": [
+     "Por que, segundo o autor, a tirania é uma “farsa de onipotência”?",
+     "Qual é o erro de Vattimo na leitura da kénōsis?",
+     "O que, afinal, devemos imitar em Cristo?"
+    ],
+    "answers": [
+     "Porque o tirano é o homem que finge ser Deus; Deus mesmo jamais seria tirano.",
+     "Propor que os cristãos imitem o esvaziamento de Cristo, quando o esvaziamento é exclusivo de Deus: só quem é Senhor por natureza pode se esvaziar, e o homem já é vazio de glória.",
+     "A sua phrónēsis: a obediência e o serviço. Cristo não quis ser homem por inveja dos homens, quis ser servo."
+    ]
+   },
+   {
+    "n": 7,
+    "part": 3,
+    "title": "Teodiceias e orações sujas",
+    "idea": "Diante do mal, nem a apologética nem a teodiceia explicam cada sofrimento, mas há lugar bíblico para a lamentação de quem continua crendo.",
+    "lesson": [
+     "O autor distingue duas reações diante do mal. A primeira é lógica e pede uma apologética. A segunda é emocional e pede uma teodiceia, isto é, uma explicação de por que Deus permite o mal.",
+     "Na dimensão lógica, a questão é se as afirmações “Deus é bom”, “Deus é onipotente” e “o mal existe” se contradizem. O autor responde que não se trata de contradição, mas de uma antinomia, ou seja, uma contradição aparente. Com J. I. Packer, ele compara a situação a outros pares: “a luz é partícula” e “a luz é onda”, ou “Jesus é Deus” e “Jesus é homem”.",
+     "Nem a apologética nem a teodiceia conseguem dar a razão específica de cada sofrimento. O autor lembra Jó 42.3 e cita Plantinga nesse ponto.",
+     "Madureira critica o que C. S. Lewis chamou de “cristianismo água com açúcar”: respostas simplistas como “isso passa, irmão; você não ora”.",
+     "A alternativa é a lamentação, a “oração suja”: feia, cheia de perguntas. Há medo dela nas igrejas, mas ela é bíblica, presente nos Salmos e em Lamentações. Ela é diferente da murmuração. A murmuração é de quem perdeu a fé e se revolta contra Deus. A lamentação é de quem continua crendo e amando a Deus, mas não consegue esconder a dor. O próprio Jesus lamentou na cruz com o Salmo 22."
+    ],
+    "points": [
+     "A reação lógica ao mal pede apologética; a reação emocional pede teodiceia.",
+     "Bondade, onipotência e existência do mal formam uma antinomia, não uma contradição.",
+     "Nem apologética nem teodiceia explicam a razão específica de cada sofrimento.",
+     "Respostas simplistas são um “cristianismo água com açúcar”.",
+     "A lamentação é bíblica e vem de quem continua crendo; a murmuração vem de quem perdeu a fé.",
+     "Jesus lamentou na cruz com o Salmo 22."
+    ],
+    "terms": [
+     {
+      "t": "Teodiceia",
+      "d": "Explicação de por que Deus permite o mal; é o que pede a reação emocional diante dele."
+     },
+     {
+      "t": "Antinomia",
+      "d": "Contradição aparente, como entre “a luz é partícula” e “a luz é onda”."
+     },
+     {
+      "t": "Lamentação",
+      "d": "A “oração suja”, feia e cheia de perguntas, de quem continua crendo e amando a Deus mas não consegue esconder a dor."
+     },
+     {
+      "t": "Murmuração",
+      "d": "Reação de quem perdeu a fé e se revolta contra Deus."
+     }
+    ],
+    "verses": [
+     "Jó 42.3",
+     "Sl 22"
+    ],
+    "questions": [
+     "Qual é a diferença entre a reação lógica e a reação emocional diante do mal?",
+     "Por que o autor fala em antinomia e não em contradição?",
+     "Como se distinguem lamentação e murmuração?"
+    ],
+    "answers": [
+     "A reação lógica pede uma apologética; a emocional pede uma teodiceia, uma explicação de por que Deus permite o mal.",
+     "Porque “Deus é bom”, “Deus é onipotente” e “o mal existe” formam apenas uma contradição aparente, como “a luz é partícula” e “a luz é onda”, ou “Jesus é Deus” e “Jesus é homem”.",
+     "A murmuração é de quem perdeu a fé e se revolta contra Deus; a lamentação é de quem continua crendo e amando a Deus, mas não consegue esconder a dor."
+    ]
+   },
+   {
+    "n": 8,
+    "part": 4,
+    "title": "A teologia do autoconhecimento",
+    "idea": "Não há conhecimento de si sem conhecimento de Deus, e a antropologia bíblica descreve o ser humano inteiro por quatro ângulos: desejante, deliberante, contingente e vivente.",
+    "lesson": [
+     "O quarto capítulo retoma um tema de Calvino e de Agostinho: não há conhecimento de si sem conhecimento de Deus.",
+     "Para desenvolver essa ideia, o autor propõe uma “gramática da antropologia bíblica”, com base no estudo de Hans Walter Wolff. Ele mostra que a tradução grega do Antigo Testamento, a Septuaginta, levou a um dualismo entre alma e corpo que é estranho ao próprio Antigo Testamento.",
+     "O exemplo central é Gênesis 2.7. Ali, o homem não tem uma alma; ele se tornou alma vivente. Os termos hebraicos descrevem o ser humano inteiro, visto de diferentes ângulos.",
+     "O autor apresenta, então, quatro imagens do ser humano. A primeira é o homem desejante, ligado à palavra néfesh, “alma”: um ser de desejos e necessidades. A segunda é o homem deliberante, ligado a leb ou lebab, “coração”: o centro do pensamento e da decisão. A terceira é o homem contingente, ligado a basar, “carne”: um ser frágil e dependente. A quarta é o homem vivente, ligado a ruah, “espírito”: a vida que vem de Deus."
+    ],
+    "points": [
+     "Não há conhecimento de si sem conhecimento de Deus, tema de Calvino e Agostinho.",
+     "Com Hans Walter Wolff, o autor mostra que a Septuaginta levou a um dualismo alma/corpo estranho ao Antigo Testamento.",
+     "Em Gn 2.7, o homem não tem uma alma; ele se tornou alma vivente.",
+     "Os termos hebraicos descrevem o ser humano inteiro por diferentes ângulos.",
+     "O ser humano é desejante (néfesh), deliberante (leb), contingente (basar) e vivente (ruah)."
+    ],
+    "terms": [
+     {
+      "t": "Néfesh",
+      "d": "“Alma”: o ser humano como ser de desejos e necessidades (homem desejante)."
+     },
+     {
+      "t": "Leb",
+      "d": "Ou lebab, “coração”: o centro do pensamento e da decisão (homem deliberante)."
+     },
+     {
+      "t": "Basar",
+      "d": "“Carne”: o ser humano frágil e dependente (homem contingente)."
+     },
+     {
+      "t": "Ruah",
+      "d": "“Espírito”: a vida que vem de Deus (homem vivente)."
+     }
+    ],
+    "verses": [
+     "Gn 2.7"
+    ],
+    "questions": [
+     "Que problema a Septuaginta trouxe para a leitura da antropologia do Antigo Testamento?",
+     "O que Gênesis 2.7 ensina sobre a relação entre o homem e a alma?",
+     "Quais são as quatro imagens do ser humano e os termos hebraicos correspondentes?"
+    ],
+    "answers": [
+     "Levou a um dualismo alma/corpo que é estranho ao Antigo Testamento.",
+     "Que o homem não tem uma alma, mas se tornou alma vivente; os termos descrevem o ser humano inteiro.",
+     "Homem desejante (néfesh, alma), deliberante (leb/lebab, coração), contingente (basar, carne) e vivente (ruah, espírito)."
+    ]
+   },
+   {
+    "n": 9,
+    "part": 5,
+    "title": "A traição dos teólogos",
+    "idea": "Traição e deserção são as duas tentações do teólogo, e ambas nascem da mesma raiz: a mente que não se submete a Cristo.",
+    "lesson": [
+     "O último capítulo trata das tentações de quem faz teologia. O ponto de partida é o debate de Norberto Bobbio sobre intelectuais “puros” e “orgânicos”. A partir dele, o autor descreve duas tentações.",
+     "A primeira é a traição: o teólogo se engaja em causas sociais e políticas a ponto de abandonar a cosmovisão cristã. A segunda é a deserção: o teólogo continua defendendo a ortodoxia, mas com a mente já não submetida à cosmovisão cristã. As duas têm a mesma raiz: a insubmissão da mente a Cristo.",
+     "Em seguida, Madureira fala da ferida do teólogo. Agostinho diz que Deus feriu seu coração com a Palavra e que, desde então, ele O amou. O autor ilustra com uma história pessoal: sua irmã negou por um tempo que gostava de um rapaz, mas acabou admitindo. Da mesma forma, quem ama a Deus não consegue negar esse amor por muito tempo. O testemunho da consciência é indestrutível, e esse amor irresistível é fruto da Palavra.",
+     "Por fim, o autor trata do compromisso, da cosmovisão e da missão do teólogo, usando o caso de Carl F. H. Henry, que combateu tanto o dualismo dos fundamentalistas quanto o secularismo dos liberais.",
+     "A traição do teólogo é sempre uma mudança de cosmovisão: ele continua pregando, mas lê as Escrituras com lentes não bíblicas."
+    ],
+    "points": [
+     "O capítulo parte do debate de Norberto Bobbio sobre intelectuais “puros” e “orgânicos”.",
+     "Traição é abandonar a cosmovisão cristã por causas sociais e políticas.",
+     "Deserção é defender a ortodoxia com a mente já não submetida à cosmovisão cristã.",
+     "Quem ama a Deus não consegue negar esse amor por muito tempo; esse amor é fruto da Palavra.",
+     "Carl F. H. Henry combateu o dualismo fundamentalista e o secularismo liberal.",
+     "A traição do teólogo é sempre uma mudança de cosmovisão."
+    ],
+    "terms": [
+     {
+      "t": "Traição",
+      "d": "Tentação do teólogo engajado em causas sociais e políticas a ponto de abandonar a cosmovisão cristã."
+     },
+     {
+      "t": "Deserção",
+      "d": "Tentação do teólogo que defende a ortodoxia, mas com a mente já não submetida à cosmovisão cristã."
+     }
+    ],
+    "verses": [],
+    "questions": [
+     "Quais são as duas tentações do teólogo descritas no capítulo?",
+     "Qual é a raiz comum dessas duas tentações?",
+     "O que a história da irmã do autor ilustra?"
+    ],
+    "answers": [
+     "A traição, que abandona a cosmovisão cristã por causas sociais e políticas, e a deserção, que defende a ortodoxia com a mente já não submetida à cosmovisão cristã.",
+     "A insubmissão da mente a Cristo.",
+     "Que, assim como ela não conseguiu negar por muito tempo que gostava de um rapaz, quem ama a Deus não consegue negar esse amor, fruto da Palavra, por muito tempo."
+    ]
+   },
+   {
+    "n": 10,
+    "part": null,
+    "title": "Conclusão: uma oração e as ideias-chave",
+    "idea": "O livro termina com uma oração que reconhece a dependência do intelecto em relação à misericórdia divina e à luz do Espírito.",
+    "lesson": [
+     "O livro termina com uma oração. Nela, o autor reconhece que nada é sem Deus.",
+     "Ele confessa que seu intelecto foi curado da cegueira pela misericórdia divina, mas que continua dependente da luz do Espírito. Por fim, pede para conhecer a Deus e a si mesmo pela Palavra.",
+     "Vale a pena revisar as ideias principais. Nem fideísmo nem racionalismo: uma razão que ora e uma fé que pensa. A teologia é feita em segunda pessoa, falando com Deus antes de falar sobre Deus. A epistemologia é monergista: o próprio conhecimento de Deus é dom da graça. A criação mostra que Deus existe, mas só Cristo mostra quem Deus é.",
+     "Continuando a revisão: o problema do mal é uma antinomia, não uma contradição, e há lugar para a lamentação, não para a murmuração. Imitar Cristo é imitar sua obediência e serviço, a phrónēsis, e não seu esvaziamento, a kénōsis. O ser humano é desejante, deliberante, contingente e vivente. E a traição e a deserção nascem da mesma raiz: a mente insubmissa a Cristo."
+    ],
+    "points": [
+     "O livro termina com uma oração.",
+     "O autor reconhece que nada é sem Deus.",
+     "Seu intelecto foi curado da cegueira pela misericórdia divina, mas segue dependente da luz do Espírito.",
+     "Ele pede para conhecer a Deus e a si mesmo pela Palavra.",
+     "Ideia-chave: nem fideísmo nem racionalismo, mas uma razão que ora e uma fé que pensa."
+    ],
+    "terms": [],
+    "verses": [],
+    "questions": [
+     "Como o livro termina?",
+     "O que o autor reconhece sobre o próprio intelecto na oração final?",
+     "O que ele pede a Deus ao concluir?"
+    ],
+    "answers": [
+     "Com uma oração, em que o autor reconhece que nada é sem Deus.",
+     "Que foi curado da cegueira pela misericórdia divina, mas continua dependente da luz do Espírito.",
+     "Conhecer a Deus e a si mesmo pela Palavra."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "coracao-de-maria-mundo-de-marta",
+  "title": "Como ter o Coração de Maria no Mundo de Marta",
+  "subtitle": "Fortalecendo a comunhão com Deus em uma vida atarefada",
+  "author": "Joanna Weaver",
+  "colors": [
+   "#5b3550",
+   "#3a2034"
+  ],
+  "desc": "Joanna Weaver parte das três cenas de Marta e Maria nos Evangelhos para mostrar que Jesus não condena o serviço, mas convida ao equilíbrio entre a intimidade da sala de estar e o serviço da cozinha. Ao longo do caminho, trata da distração, da ansiedade, da sobrecarga e da intimidade com Deus como ato de vontade, lembrando que a única coisa necessária é conhecer Jesus e ouvir sua voz.",
+  "parts": [],
+  "chapters": [
+   {
+    "n": 1,
+    "part": null,
+    "title": "A história de duas irmãs",
+    "idea": "Marta e Maria representam duas tendências presentes em todas nós, e Jesus ama e chama as duas a colocar primeiro as coisas mais importantes.",
+    "lesson": [
+     "O livro de Joanna Weaver parte das três cenas em que Marta e Maria aparecem nos Evangelhos: Lucas 10.38-42, João 11 e João 12.1-8.",
+     "No primeiro capítulo, ela apresenta as duas irmãs. Marta é ativa, hospitaleira e ocupada. Maria é contemplativa e fica aos pés de Jesus.",
+     "Weaver mostra que essas duas tendências existem em todas as mulheres. Por isso o chamado de Jesus é para colocar “primeiro as coisas mais importantes”.",
+     "A tese central do livro é que Jesus não condena o serviço de Marta. Ele convida ao equilíbrio entre a intimidade da sala de estar, que é estar aos pés de Jesus, e o serviço da cozinha, que é trabalhar para Ele. A “uma só coisa necessária” é conhecer Jesus e ouvir a sua voz.",
+     "As boas-novas do capítulo: Jesus ama as duas irmãs e chama as duas."
+    ],
+    "points": [
+     "O livro se apoia em três cenas: Lc 10.38-42, Jo 11 e Jo 12.1-8.",
+     "Marta é ativa, hospitaleira e ocupada; Maria é contemplativa e senta-se aos pés de Jesus.",
+     "As duas tendências existem em todas as mulheres.",
+     "Jesus não condena o serviço, mas chama a colocar primeiro as coisas mais importantes.",
+     "A “uma só coisa necessária” é conhecer Jesus e ouvir sua voz.",
+     "Jesus ama as duas irmãs e chama as duas."
+    ],
+    "terms": [
+     {
+      "t": "Sala de estar",
+      "d": "Imagem da intimidade com Jesus: estar aos pés dele para ouvi-lo."
+     },
+     {
+      "t": "Cozinha",
+      "d": "Imagem do serviço: trabalhar para Jesus."
+     },
+     {
+      "t": "Uma só coisa necessária",
+      "d": "Expressão de Jesus a Marta; no livro, significa conhecer Jesus e ouvir sua voz."
+     }
+    ],
+    "verses": [
+     "Lc 10.38-42",
+     "Jo 11",
+     "Jo 12.1-8"
+    ],
+    "questions": [
+     "Quais são as três cenas dos Evangelhos que servem de base para o livro?",
+     "Segundo a autora, as tendências de Marta e de Maria estão em pessoas diferentes ou em todas nós?",
+     "Qual é a tese central do livro sobre o serviço de Marta?"
+    ],
+    "answers": [
+     "Lc 10.38-42, Jo 11 e Jo 12.1-8.",
+     "Em todas: as duas tendências existem em todas as mulheres.",
+     "Jesus não condena o serviço de Marta; ele convida ao equilíbrio entre a intimidade da sala de estar e o serviço da cozinha."
+    ]
+   },
+   {
+    "n": 2,
+    "part": null,
+    "title": "“Senhor, não te importas?”",
+    "idea": "Por trás da reclamação de Marta estão o senso de injustiça e a estratégia dos três “D”: distração, desânimo e dúvida.",
+    "lesson": [
+     "Marta reclama a Jesus que está trabalhando sozinha. Weaver vê nessa queixa um senso de injustiça. Ela fala de como “pesamos” tudo numa balança de justiça e de como, quando procuramos injustiça, sempre a encontramos.",
+     "A autora descreve então os três “D” mortais da estratégia de Satanás. Ela os ilustra com a história de demônios que derrubam um sacerdote humilde ao contar-lhe que o irmão dele tinha se tornado bispo.",
+     "O primeiro “D” é a distração: desviar o olhar de Deus para as circunstâncias. A palavra grega usada para Marta, perispao, significa ser puxada para longe. Até o ministério legítimo pode se tornar um peso. O segundo é o desânimo: fazer a pessoa acreditar que sua felicidade depende das circunstâncias. O terceiro é a dúvida: quando a pessoa está desanimada, convencê-la de que Deus não se importa.",
+     "A pergunta de Marta, “Senhor, não te importas?”, revela dúvida sobre o cuidado de Jesus. A autora encoraja a levar as perguntas a Deus com honestidade."
+    ],
+    "points": [
+     "Quando procuramos injustiça, sempre a encontramos.",
+     "Distração: tirar os olhos de Deus e colocá-los nas circunstâncias.",
+     "Desânimo: crer que a felicidade depende das circunstâncias.",
+     "Dúvida: concluir que Deus não se importa.",
+     "Até o ministério legítimo pode se tornar um peso.",
+     "Perguntas difíceis devem ser levadas a Deus com honestidade."
+    ],
+    "terms": [
+     {
+      "t": "Perispao",
+      "d": "Palavra grega usada para descrever Marta; significa ser puxada para longe."
+     },
+     {
+      "t": "Os três “D”",
+      "d": "Distração, desânimo e dúvida, apresentados como a estratégia de Satanás para afastar o crente de Deus."
+     }
+    ],
+    "verses": [
+     "Lc 10.38-42"
+    ],
+    "questions": [
+     "Que atitude a autora identifica por trás da reclamação de Marta?",
+     "Quais são os três “D” e em que ordem atuam?",
+     "O que significa a palavra grega perispao?"
+    ],
+    "answers": [
+     "Um senso de injustiça: pesar tudo numa balança e, ao procurar injustiça, sempre encontrá-la.",
+     "Distração (desviar o olhar de Deus para as circunstâncias), desânimo (crer que a felicidade depende delas) e dúvida (convencer-se de que Deus não se importa).",
+     "Ser puxada para longe."
+    ]
+   },
+   {
+    "n": 3,
+    "part": null,
+    "title": "O diagnóstico: ansiedade",
+    "idea": "Jesus diagnostica Marta como ansiosa, e o caminho para a vitória está em Filipenses 4.6-7: não se inquietar, orar por tudo e agradecer por tudo.",
+    "lesson": [
+     "Jesus diz que Marta está “ansiosa e afadigada”. Weaver se descreve como uma “ansiosa nata” e distingue a preocupação natural da preocupação como modo de vida.",
+     "A autora lembra os nomes de Deus: Jeová Jiré, o Deus que provê; Jeová Rafá, o Deus que cura; e El-Shadai, nome geralmente traduzido como Deus Todo-Poderoso.",
+     "Em seguida, ela apresenta três passos para a vitória a partir de Filipenses 4.6-7. O primeiro é não estar inquieto por coisa alguma, nem por uma coisa sequer. O segundo é apresentar tudo em oração. Em vez de alimentar a preocupação, a autora passou a transformar cada pensamento ansioso em oração, como ao pedir: “Jesus, esteja com meu marido na estrada”. O terceiro é ser grato por tudo. A gratidão muda a postura: passamos a ver a vida como Cristo vê, com mais oportunidades do que obstáculos.",
+     "A preocupação engrandece o problema; a oração engrandece a Deus. A batalha acontece na mente, e a promessa é a “perfeita paz”."
+    ],
+    "points": [
+     "Jesus diagnostica Marta como “ansiosa e afadigada”.",
+     "Há diferença entre preocupação natural e preocupação como modo de vida.",
+     "A autora lembra os nomes de Deus: Jeová Jiré, Jeová Rafá, El-Shadai.",
+     "Fp 4.6-7: não se inquietar, orar por tudo, agradecer por tudo.",
+     "Cada pensamento ansioso pode ser transformado em oração.",
+     "A preocupação engrandece o problema; a oração engrandece a Deus."
+    ],
+    "terms": [
+     {
+      "t": "Jeová Jiré",
+      "d": "O Deus que provê."
+     },
+     {
+      "t": "Jeová Rafá",
+      "d": "O Deus que cura."
+     },
+     {
+      "t": "El-Shadai",
+      "d": "Nome hebraico de Deus, geralmente traduzido como Deus Todo-Poderoso."
+     }
+    ],
+    "verses": [
+     "Lc 10.38-42",
+     "Fp 4.6-7"
+    ],
+    "questions": [
+     "Que distinção a autora faz a respeito da preocupação?",
+     "Quais são os três passos para a vitória sobre a ansiedade, segundo Fp 4.6-7?",
+     "Qual é a diferença entre o efeito da preocupação e o efeito da oração?"
+    ],
+    "answers": [
+     "Entre a preocupação natural e a preocupação como modo de vida.",
+     "Não estar inquieto por coisa alguma, apresentar tudo em oração e ser grato por tudo.",
+     "A preocupação engrandece o problema; a oração engrandece a Deus."
+    ]
+   },
+   {
+    "n": 4,
+    "part": null,
+    "title": "A cura: descarregar a carroça",
+    "idea": "Deus pede menos do que imaginamos; a cura para a sobrecarga é descarregar as “pedras” que Ele não pediu e oferecer-lhe comunhão.",
+    "lesson": [
+     "Weaver ilustra este capítulo com a história de um homem que leva uma carroça para ajudar Deus. No caminho, ele vai acumulando pedras e cargas dos outros, até não conseguir mais andar. Deus então tira tudo e devolve apenas três pedras: as que Ele de fato tinha pedido. A lição: Deus pede menos do que imaginamos.",
+     "A autora situa Marta em seu contexto. Os fariseus tinham transformado a Lei em mais de 600 regras, por exemplo sobre o sábado. As mulheres tinham dezenas de obrigações e acesso restrito à adoração. Provavelmente era a Festa dos Tabernáculos, com a casa cheia.",
+     "Jesus derrubou a “carroça” de regras humanas. Aos sobrecarregados, ofereceu alívio (Mateus 11.28). E, ao dizer que só uma coisa era necessária, também quebrou o preconceito: mulheres podiam sentar-se aos pés do Mestre como discípulas.",
+     "A autora compartilha um exercício prático de um casal amigo: listar todas as atividades, orar, classificá-las de 1 a 4 por importância e cortar as de nota 4.",
+     "Por fim, ela conta que o marido lhe deu um presente “útil” quando ela queria algo pessoal. Deus também não quer nossos presentes “práticos” de trabalho; Ele deseja comunhão."
+    ],
+    "points": [
+     "Deus pede menos do que imaginamos.",
+     "Os fariseus haviam transformado a Lei em mais de 600 regras.",
+     "Jesus oferece alívio aos sobrecarregados (Mt 11.28).",
+     "Mulheres podiam sentar-se aos pés do Mestre como discípulas.",
+     "Exercício: listar atividades, orar, classificar de 1 a 4 e cortar as de nota 4.",
+     "Deus não quer nossos presentes “práticos” de trabalho; Ele deseja comunhão."
+    ],
+    "terms": [
+     {
+      "t": "Festa dos Tabernáculos",
+      "d": "Provavelmente a ocasião da cena, com a casa de Marta cheia."
+     }
+    ],
+    "verses": [
+     "Lc 10.38-42",
+     "Mt 11.28"
+    ],
+    "questions": [
+     "Qual é a lição da ilustração da carroça?",
+     "Que preconceito Jesus quebrou ao dizer que só uma coisa era necessária?",
+     "Como funciona o exercício prático sugerido no capítulo?"
+    ],
+    "answers": [
+     "Deus pede menos do que imaginamos; Ele devolve só as pedras que de fato pediu.",
+     "O de que mulheres não podiam sentar-se aos pés do Mestre como discípulas.",
+     "Listar todas as atividades, orar, classificá-las de 1 a 4 por importância e cortar as de nota 4."
+    ]
+   },
+   {
+    "n": 5,
+    "part": null,
+    "title": "A intimidade da sala de estar",
+    "idea": "Cristo já pagou o preço para que tenhamos lugar à mesa, mas barreiras como culpa, agitação e “barras de chocolate espirituais” podem tirar nossa fome de Deus.",
+    "lesson": [
+     "Weaver começa lembrando que o preço já foi pago. Muitos cristãos vivem como “indigentes” espirituais, achando que precisam merecer um lugar à mesa. Mas a parede de separação foi derrubada por Cristo.",
+     "Ainda assim, há barreiras à intimidade. Antes da salvação, Satanás diz que estamos bem; depois, diz que não somos boas o bastante. Ele usa meias-verdades (um “pseudo”-cristianismo), culpa e uma vida agitada para nos afastar.",
+     "A autora fala também das barras de chocolate espirituais. Ela conta de uma amiga que comeu chocolate antes do jantar e perdeu a fome do banquete. Amigos, livros, compras, TV e até música cristã podem ser bons, mas tiram a fome de Deus. Ao contrário da fome física, a fome espiritual cresce quanto mais nos alimentamos de Deus.",
+     "O capítulo traz ainda seções sobre dar lugar ao Salvador, o conforto do lar, como viver juntos e como manter a intimidade."
+    ],
+    "points": [
+     "O preço foi pago: não precisamos merecer um lugar à mesa.",
+     "A parede de separação foi derrubada por Cristo.",
+     "Satanás usa meias-verdades, culpa e agitação para nos afastar.",
+     "Coisas boas podem se tornar “barras de chocolate espirituais”.",
+     "A fome espiritual cresce quanto mais nos alimentamos de Deus."
+    ],
+    "terms": [
+     {
+      "t": "Indigentes espirituais",
+      "d": "Cristãos que vivem como se precisassem merecer um lugar à mesa de Deus."
+     },
+     {
+      "t": "Barras de chocolate espirituais",
+      "d": "Coisas boas que tiram a fome de Deus, como o chocolate comido antes do jantar."
+     }
+    ],
+    "verses": [],
+    "questions": [
+     "Por que muitos cristãos vivem como “indigentes” espirituais?",
+     "O que Satanás diz antes e depois da salvação, segundo a autora?",
+     "Em que a fome espiritual difere da fome física?"
+    ],
+    "answers": [
+     "Porque acham que precisam merecer um lugar à mesa, embora a parede de separação já tenha sido derrubada por Cristo.",
+     "Antes, diz que estamos bem; depois, diz que não somos boas o bastante.",
+     "A fome espiritual cresce quanto mais nos alimentamos de Deus."
+    ]
+   },
+   {
+    "n": 6,
+    "part": null,
+    "title": "O serviço da cozinha",
+    "idea": "A intimidade com Jesus produz fruto, e o serviço genuíno nasce de estar com Ele.",
+    "lesson": [
+     "Neste capítulo, Weaver mostra que a intimidade produz fruto. O serviço genuíno nasce de estar com Jesus.",
+     "Servir como Jesus serviu significa servir dentro e fora da nossa agenda, com amor, compaixão e poder, “espalhando Jesus por toda parte”."
+    ],
+    "points": [
+     "A intimidade produz fruto.",
+     "O serviço genuíno nasce de estar com Jesus.",
+     "Servir como Jesus serviu, dentro e fora da nossa agenda.",
+     "O serviço deve ser feito com amor, compaixão e poder.",
+     "O alvo é “espalhar Jesus por toda parte”."
+    ],
+    "terms": [],
+    "verses": [],
+    "questions": [
+     "Qual é a relação entre a intimidade e o serviço neste capítulo?",
+     "Com que características devemos servir, segundo a autora?",
+     "Que expressão resume o ideal de serviço apresentado?"
+    ],
+    "answers": [
+     "A intimidade produz fruto: o serviço genuíno nasce de estar com Jesus.",
+     "Como Jesus serviu, dentro e fora da nossa agenda, com amor, compaixão e poder.",
+     "“Espalhando Jesus por toda parte.”"
+    ]
+   },
+   {
+    "n": 7,
+    "part": null,
+    "title": "A melhor parte",
+    "idea": "A intimidade com Deus é um ato de vontade, cultivado com constância, criatividade e conversa.",
+    "lesson": [
+     "Weaver afirma que a intimidade com Deus não depende das emoções; é um ato de vontade. Ela cita o testemunho de J. Sidlow Baxter, que “conversou” com sua Vontade e insistiu na hora de oração mesmo quando as emoções fugiam. Depois de semanas de luta, intelecto, vontade e emoções se uniram em oração.",
+     "A autora fala também da graça maravilhosa: a “melhor parte” não está num lugar distante. Está dentro de nós, onde Cristo habita pelo Espírito. Mas a porta da vontade só se abre por dentro.",
+     "Weaver apresenta três chaves que começam com a letra C. A primeira é a constância: encontrar Deus regularmente, de preferência num horário fixo. Constância não é perfeição; é recusar-se a desistir. A segunda é a criatividade: variar as formas de devoção para não cair na rotina. A terceira é a conversa: manter um diálogo contínuo com Deus durante o dia."
+    ],
+    "points": [
+     "A intimidade com Deus é um ato de vontade, não de emoção.",
+     "J. Sidlow Baxter insistiu na hora de oração mesmo quando as emoções fugiam.",
+     "A “melhor parte” está dentro de nós, onde Cristo habita pelo Espírito.",
+     "A porta da vontade só se abre por dentro.",
+     "Constância não é perfeição; é recusar-se a desistir.",
+     "As três chaves: constância, criatividade e conversa."
+    ],
+    "terms": [
+     {
+      "t": "Constância",
+      "d": "Encontrar Deus regularmente, de preferência num horário fixo, sem desistir."
+     },
+     {
+      "t": "Criatividade",
+      "d": "Variar as formas de devoção para não cair na rotina."
+     },
+     {
+      "t": "Conversa",
+      "d": "Diálogo contínuo com Deus durante o dia."
+     }
+    ],
+    "verses": [
+     "Lc 10.38-42"
+    ],
+    "questions": [
+     "O que o testemunho de J. Sidlow Baxter ilustra?",
+     "Onde está a “melhor parte”, segundo a autora?",
+     "Quais são as três chaves com “C” e o que é constância?"
+    ],
+    "answers": [
+     "Que a intimidade é um ato de vontade: ele insistiu na oração mesmo sem as emoções, até que intelecto, vontade e emoções se unissem.",
+     "Dentro de nós, onde Cristo habita pelo Espírito; mas a porta da vontade só se abre por dentro.",
+     "Constância, criatividade e conversa; constância é encontrar Deus regularmente e recusar-se a desistir, não ser perfeito."
+    ]
+   },
+   {
+    "n": 8,
+    "part": null,
+    "title": "Lições de Lázaro",
+    "idea": "Quando o amor de Deus parece tardar, somos chamados a confiar em seu caráter: Jesus chora conosco e tem poder para ressuscitar.",
+    "lesson": [
+     "Em João 11, Jesus demora a ir a Betânia, e Lázaro morre. A partir dessa cena, Weaver trata de por que coisas ruins acontecem, de quando o amor de Deus parece tardar e de confiar no caráter de Deus.",
+     "Antes de agir, Jesus chora com as irmãs. Ele é o Deus que chora conosco.",
+     "A ressurreição de Lázaro mostra o poder de Deus e a necessidade de abandonar a “casca vazia”, as mortalhas."
+    ],
+    "points": [
+     "Jesus demora a ir a Betânia, e Lázaro morre.",
+     "Quando o amor de Deus parece tardar, confiamos em seu caráter.",
+     "Jesus chora com as irmãs antes de agir.",
+     "Ele é o Deus que chora conosco.",
+     "A ressurreição mostra o poder de Deus e a necessidade de abandonar a “casca vazia” (as mortalhas)."
+    ],
+    "terms": [],
+    "verses": [
+     "Jo 11"
+    ],
+    "questions": [
+     "De que temas a autora trata a partir da morte de Lázaro?",
+     "O que o choro de Jesus revela sobre Ele?",
+     "O que a ressurreição de Lázaro mostra?"
+    ],
+    "answers": [
+     "Por que coisas ruins acontecem, quando o amor de Deus parece tardar e confiar no caráter de Deus.",
+     "Que Ele é o Deus que chora conosco.",
+     "O poder de Deus e a necessidade de abandonar a “casca vazia” (as mortalhas)."
+    ]
+   },
+   {
+    "n": 9,
+    "part": null,
+    "title": "O coração receptivo de Marta",
+    "idea": "Marta aprendeu: seu coração ensinável mostra que pessoas “Marta” também podem ser transformadas.",
+    "lesson": [
+     "Marta aprendeu. Ela tinha um coração disposto a ser ensinado, a receber repreensão e a fazer o que Jesus dizia.",
+     "A imagem final é a da borboleta: uma transformação santa, que mostra que pessoas “Marta” também podem mudar."
+    ],
+    "points": [
+     "Marta aprendeu com Jesus.",
+     "Ela tinha um coração disposto a ser ensinado.",
+     "Ela soube receber repreensão.",
+     "Ela fazia o que Jesus dizia.",
+     "A borboleta simboliza uma transformação santa."
+    ],
+    "terms": [],
+    "verses": [],
+    "questions": [
+     "Quais características do coração de Marta a autora destaca?",
+     "Que imagem encerra o capítulo?",
+     "Qual é a mensagem de esperança deste capítulo?"
+    ],
+    "answers": [
+     "Um coração disposto a ser ensinado, a receber repreensão e a fazer o que Jesus dizia.",
+     "A da borboleta, símbolo de uma transformação santa.",
+     "Que pessoas “Marta” também podem mudar."
+    ]
+   },
+   {
+    "n": 10,
+    "part": null,
+    "title": "O amor extraordinário de Maria",
+    "idea": "Ao derramar o perfume caro aos pés de Jesus, Maria mostra que o amor verdadeiro sempre custa algo, em contraste com o coração avarento de Judas.",
+    "lesson": [
+     "Em João 12, Maria derrama o perfume caro aos pés de Jesus. Weaver usa essa cena para comparar Maria e Judas.",
+     "São quatro contrastes. Maria tinha um coração grato; Judas, um coração avarento. Maria veio despreocupada; Judas veio com uma agenda. Maria ouviu e correspondeu; Judas ouviu, mas não entendeu. Maria não reteve nada; Judas não abandonou nada.",
+     "Onde está o nosso tesouro, ali está o coração (Mateus 6.21). Sem gratidão, ficamos com o coração endurecido como o de Judas.",
+     "O amor verdadeiro sempre custa algo para quem o oferece. A pergunta final do capítulo: amamos a Jesus com tudo, ou só quando é conveniente?"
+    ],
+    "points": [
+     "Maria derramou um perfume caro aos pés de Jesus.",
+     "Maria tinha um coração grato; Judas, um coração avarento.",
+     "Maria veio despreocupada; Judas veio com uma agenda.",
+     "Maria não reteve nada; Judas não abandonou nada.",
+     "Onde está o tesouro, ali está o coração (Mt 6.21).",
+     "O amor verdadeiro sempre custa algo para quem o oferece."
+    ],
+    "terms": [],
+    "verses": [
+     "Jo 12.1-8",
+     "Mt 6.21"
+    ],
+    "questions": [
+     "Quais são os quatro contrastes entre Maria e Judas?",
+     "O que acontece com o coração sem gratidão?",
+     "Que pergunta final o capítulo propõe?"
+    ],
+    "answers": [
+     "Coração grato x avarento; despreocupada x com agenda; ouviu e correspondeu x ouviu sem entender; não reteve nada x não abandonou nada.",
+     "Endurece, como o coração de Judas.",
+     "Amamos a Jesus com tudo, ou só quando é conveniente?"
+    ]
+   },
+   {
+    "n": 11,
+    "part": null,
+    "title": "Equilibrando trabalho e adoração",
+    "idea": "Fomos criados para a adoração e para as boas obras, e o segredo do equilíbrio é descobrir o que Deus nos confiou.",
+    "lesson": [
+     "Weaver usa a imagem de uma gangorra. Alguns cristãos ficam só no lado da adoração; outros, só no lado do trabalho. Jesus nos tira do conforto para nos equilibrar, como na parábola do bom samaritano, que desmonta a desculpa do doutor da lei.",
+     "A autora usa a expressão “trabalho árduo santo”, de Tim Hansel, para falar da fusão do espiritual com o terreno. Fomos criados para a adoração e também para as boas obras (Efésios 2.10).",
+     "Ela também propõe praticar dizer “sim”. Weaver conta que aprendeu a dizer “não” com tanta facilidade que passou a dizer não até para Deus. Precisamos dizer “sim” a Deus, mas isso não é dizer “sim” a tudo. O segredo não é fazer tudo, mas descobrir o que Deus nos confiou.",
+     "O capítulo traz ainda seções sobre o ritmo de uma vida equilibrada, o presente do Shabat (descanso) e o dom da hospitalidade."
+    ],
+    "points": [
+     "Na gangorra, há quem fique só na adoração e quem fique só no trabalho.",
+     "Jesus nos tira do conforto para nos equilibrar.",
+     "“Trabalho árduo santo” é a fusão do espiritual com o terreno.",
+     "Fomos criados para a adoração e para as boas obras (Ef 2.10).",
+     "Dizer “sim” a Deus não é dizer “sim” a tudo.",
+     "O segredo é descobrir o que Deus nos confiou."
+    ],
+    "terms": [
+     {
+      "t": "Trabalho árduo santo",
+      "d": "Expressão de Tim Hansel para a fusão do espiritual com o terreno."
+     },
+     {
+      "t": "Shabat",
+      "d": "Descanso; o capítulo tem uma seção sobre “o presente do Shabat”."
+     }
+    ],
+    "verses": [
+     "Ef 2.10"
+    ],
+    "questions": [
+     "O que representa a imagem da gangorra?",
+     "O que significa a expressão “trabalho árduo santo”?",
+     "Que perigo a autora percebeu em sua facilidade de dizer “não”?"
+    ],
+    "answers": [
+     "Alguns cristãos ficam só no lado da adoração e outros só no lado do trabalho; Jesus nos tira do conforto para nos equilibrar.",
+     "A fusão do espiritual com o terreno; fomos criados para a adoração e para as boas obras.",
+     "Ela passou a dizer não até para Deus."
+    ]
+   },
+   {
+    "n": 12,
+    "part": null,
+    "title": "O coração de Maria no mundo de Marta",
+    "idea": "Deus é o Senhor do processo de transformação, e o caminho como parceiras de Cristo vale a pena.",
+    "lesson": [
+     "Na conclusão, Weaver lembra que Deus é o Senhor do processo de transformação. Somos parceiras de Cristo, e a fé é provada ao longo do caminho, mas o resultado vale a pena. O livro termina com uma oração de entrega.",
+     "Para revisar o percurso: o problema de Marta não era o serviço, mas a distração, o desânimo e a dúvida. Filipenses 4.6-7 ensina a não se preocupar, orar por tudo e agradecer por tudo. Deus pede menos do que imaginamos; descarregue as “pedras” que Ele não pediu. Cuidado com as “barras de chocolate espirituais”. A intimidade é um ato de vontade: constância, criatividade e conversa. E há o contraste entre o amor extraordinário de Maria e o amor mesquinho de Judas.",
+     "O livro traz ainda apêndices: um guia de estudo com perguntas para cada capítulo, bom para grupos, um diário de leitura e um plano simples para meio dia de oração."
+    ],
+    "points": [
+     "Deus é o Senhor do processo de transformação.",
+     "Somos parceiras de Cristo.",
+     "A fé é provada ao longo do caminho, mas o resultado vale a pena.",
+     "O problema de Marta não era o serviço, mas a distração, o desânimo e a dúvida.",
+     "Deus pede menos do que imaginamos; descarregue as “pedras” que Ele não pediu."
+    ],
+    "terms": [],
+    "verses": [
+     "Fp 4.6-7"
+    ],
+    "questions": [
+     "Quem é o Senhor do processo de transformação, segundo a conclusão?",
+     "Qual era, afinal, o problema de Marta?",
+     "Que recursos o livro oferece nos apêndices?"
+    ],
+    "answers": [
+     "Deus; nós somos parceiras de Cristo.",
+     "Não o serviço, mas a distração, o desânimo e a dúvida.",
+     "Um guia de estudo com perguntas por capítulo, um diário de leitura e um plano para meio dia de oração."
+    ]
+   }
+  ]
  }
 ]

@@ -1,4 +1,4 @@
-import { store, isConfigured } from "./store.js?v=2";
+import { store, isConfigured } from "./store.js?v=3";
 
 const $main = document.getElementById("main");
 const $account = document.getElementById("account");
