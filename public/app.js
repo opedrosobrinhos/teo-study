@@ -1,4 +1,4 @@
-import { store, isConfigured } from "./store.js?v=5";
+import { store, isConfigured } from "./store.js?v=6";
 
 const $main = document.getElementById("main");
 const $account = document.getElementById("account");
@@ -11,7 +11,7 @@ const fmtHours = (s) => { const h = Math.floor(s / 3600), m = Math.round((s % 36
 const thumb = (id) => `https://i.ytimg.com/vi/${id}/mqdefault.jpg`;
 const WATCH_RATIO = 0.85;
 
-let COURSES = [], QUIZ = {}, LESSON = {}, SUBJECT = {}, SERMONS = [], BOOKS = [], ready = false;
+let COURSES = [], QUIZ = {}, LESSON = {}, SUBJECT = {}, SERMONS = [], BOOKS = [], SUMMARIES = {}, ready = false;
 
 function toast(msg) {
   $toast.textContent = msg; $toast.classList.add("show");
@@ -19,13 +19,14 @@ function toast(msg) {
 }
 
 async function loadData() {
-  const [c, q, s, b] = await Promise.all([
+  const [c, q, s, b, r] = await Promise.all([
     fetch("data/courses.json", { cache: "no-cache" }).then((r) => r.json()),
     fetch("data/quiz.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => ({})),
     fetch("data/sermons.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => []),
     fetch("data/books.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => []),
+    fetch("data/summaries.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => ({})),
   ]);
-  COURSES = c; QUIZ = q; SERMONS = s; BOOKS = b;
+  COURSES = c; QUIZ = q; SERMONS = s; BOOKS = b; SUMMARIES = r;
   for (const course of COURSES) for (const s of course.subjects) {
     s.course = course; SUBJECT[s.id] = s;
     s.lessons.forEach((l, i) => { l.n = i + 1; l.subject = s; l.secs = toSec(l.dur); LESSON[l.id] = l; });
@@ -281,6 +282,23 @@ function lessonRow(l, isNext, current = false) {
 /* ---------- Aula ---------- */
 let player = null, ticker = null, session = null;
 
+// Resumo da aula, escrito a partir do que o professor diz no vídeo.
+function lessonSummary(id) {
+  const r = SUMMARIES[id]; if (!r) return "";
+  return `
+    <section class="lesson-summary">
+      <h2>Resumo da aula</h2>
+      <p class="study-big-idea">${esc(r.idea)}</p>
+      <div class="sermon-body">
+        ${r.p.map((p) => `<p>${esc(p)}</p>`).join("")}
+        <h3>Para guardar</h3>
+        <ul class="study-points">${r.points.map((p) => `<li>${esc(p)}</li>`).join("")}</ul>
+        ${r.terms?.length ? `<h3>Termos</h3><dl class="study-terms">${r.terms.map((t) => `<div><dt>${esc(t.t)}</dt><dd>${esc(t.d)}</dd></div>`).join("")}</dl>` : ""}
+        ${r.verses?.length ? `<h3>Passagens</h3><p class="study-verses">${r.verses.map((v) => `<span>${esc(v)}</span>`).join("")}</p>` : ""}
+      </div>
+    </section>`;
+}
+
 function renderLesson(id) {
   const l = LESSON[id]; if (!l) return renderNotFound();
   const s = l.subject, prev = s.lessons[l.n - 2], next = s.lessons[l.n];
@@ -300,6 +318,7 @@ function renderLesson(id) {
           </button>
           <span class="watch-hint" id="hint">${watched(id) ? "" : `Marcamos sozinhos quando você assistir ${Math.round(WATCH_RATIO * 100)}% do vídeo aqui.`}</span>
         </div>
+        ${lessonSummary(id)}
         <nav class="pager">
           ${prev ? `<a href="#/a/${prev.id}" class="pager-prev"><small>Anterior</small>${esc(prev.title)}</a>` : "<span></span>"}
           ${next ? `<a href="#/a/${next.id}" class="pager-next"><small>Próxima</small>${esc(next.title)}</a>` : `<a href="#/m/${s.id}" class="pager-next"><small>Fim da matéria</small>Voltar para ${esc(s.title)}</a>`}

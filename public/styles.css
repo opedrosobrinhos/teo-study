@@ -316,6 +316,8 @@ body:has(.signin) .topbar { display: none; }
 .study-qa details[open] summary { border-bottom: 1px solid var(--line); }
 .study-qa details p { color: var(--ink-2); margin: 10px 0 14px; }
 .study-ch .watch-row { margin-top: 36px; }
+.lesson-summary { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--line); }
+.lesson-summary h2 { font-size: 1.5rem; }
 .study-big-idea { font: 1.2rem/1.5 var(--serif); color: var(--ink-2); margin: 14px 0 0; max-width: 58ch; }
 .study-points { margin: 12px 0 0; padding-left: 1.2em; }
 .study-points li { margin-top: 8px; }
